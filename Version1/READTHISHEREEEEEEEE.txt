@@ -1,0 +1,6 @@
+Warning - all of this stuff was done while I was still figuring out what was going on.
+
+It is not adhering to any proper style, is buggy and messy, and was just a starting rough draft to get used to using some web technologies. I am only keepign these files here in case they are needed as a refrence in the future.
+
+
+DO NOT ATTEMPT TO USE THESE FOR ANY OTHER PURPOSE :)
