@@ -2,42 +2,88 @@
 <html>
     <head>
         <style>
+            
+            html * { 
+                /*Set the font for the entire document to Avenir Next*/
+                font-family: "Avenir Next" !important; 
+                color: black;
+                
+                /* STYLE GUIDE for CSS:
+                Each piece will have a 1 line description
+                All colons will have one space following them
+                There will be no spaces before the semicolons
+                Depending on the font weight, you may need to change the size slightly
+                
+                The order shall go:
+                display
+                fontsize
+                top margin (basically, go counterclockwise)
+                left margin
+                bottom margin
+                right margin
+                bolding weight of font
+                
+                */ 
+            }
+            
             h1 {
-                color:black;
                 /*Upper left header*/
-                font-size: 20px;
-                margin-top:10px;
-                margin-bottom: 0px;
-                margin-left:15px;
-                margin-right:165px;
                 display: inline;
+                font-size: 13.5pt;
+                margin-top: 0pt;
+                margin-left: 36pt; 
+                margin-bottom: 0pt;
+                margin-right: 0pt;
+                font-weight: bold;
+
+
             }  
             
             h2 {
-                color:black;
                 /*Upper rightt header*/
-                text-align: right;
-                font-size: 25px; 
-                margin-top: 0px;
-                margin-right: 10px;
-                margin-left:0px;
-                margin-bottom: 10px;
                 display: inline;
+                text-align: right;
+                font-size: 17.3pt; 
+                margin-top: 0pt;
+                margin-right: 36pt;
+                margin-left: 106pt;
+                margin-bottom: 0pt;
+                font-weight: bold;
+
             }  
 
             p1 {
-                color:black;
+                /*Date, just underneath the first (upper left) header*/
                 display:block;
-                /*Date and Location, just underneath the first (upper left) header*/
-                font-size: 15px;
-                margin-top:0px;
-                margin-bottom: 0px;
-                margin-left:15px;
-                margin-right:165px;
+                font-size: 10.1pt;
+                margin-top: -5pt;
+                margin-left: 36pt;  
+                margin-bottom: 0pt;
+                margin-right: 0pt;
+                font-weight: normal;
             } 
-
-
-</style>
+            p2 {
+                /*Location, just underneath the date*/
+                display: block;
+                font-size: 10.1pt;
+                margin-top: -2.5pt;
+                margin-left: 36pt;  
+                margin-bottom: 0pt;
+                margin-right: 0pt;
+                font-weight: normal;
+            } 
+            
+            p3{
+                display:block;
+                /*First Candidate - This time it's a presidential candidate*/
+                font-size: 11.5pt;
+                margin-top:19pt;
+                margin-left:36pt;  
+                margin-bottom: 0pt;
+                margin-right:0pt;
+                font-weight: bold;
+            } 
+        </style>
     </head>
     
     <body>
@@ -45,12 +91,10 @@
         <h2>PLACE THIS IN BALLOT BOX</h2>
     
         
-        <p1>
-            November 8, 2016, General Election 
-            <br> 
-            2016, General Election
-        </p1> 
+        <p1>November 8, 2016, General Election</p1> 
+        <p2>Harris County, Texas Precint 101A</p2>
     
+        <p3>President and Vice President</p3>
     
     </body>
         
