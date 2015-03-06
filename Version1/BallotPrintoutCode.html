@@ -11,6 +11,9 @@
         2. If we put in too many elements, it will go on to the next page.
            This causes problems, since the headers don't show up on the next page.
            Solution: NOT SURE
+
+        3. How do we position the bar code that's supposed to go at the bottom?
+           Solution: ?
      -->
     <head>
         <style>
@@ -42,7 +45,7 @@
                 EXCEPTIONS:
                 1.xdivLeftSide and divRightSide: 2 floating divs I use to split up the left and right side
                 
-                2. Div.party and div.nameNextToParty: Getting the party name inline to the right of candidate names
+                2. Div.party and div.onlyOrSecondPerson: Getting the party name inline to the right of candidate names
                 */ 
             }
             
@@ -52,9 +55,9 @@
                 font-size: 13.5pt;
                 margin-top: -1.5pt;
                 margin-left: 0pt; 
-                margin-bottom: 14pt;
+                margin-bottom: 10pt;
                 margin-right: 0pt;
-                font-weight: bold;    
+                font-weight: bolder;    
             }
         
             h1 {
@@ -102,13 +105,13 @@
                 font-weight: normal;
             } 
             
-            div.electionTitle {
+            div.electionOrProposition {
                 /*The name of each election */
                 display:block;
-                font-size: 11.5pt;
+                font-size: 11pt;
                 margin-top:0pt;
                 margin-left:0pt;  
-                margin-bottom: 4pt;
+                margin-bottom: 1.5pt;
                 margin-right:0pt;
                 font-weight: bold
             }
@@ -116,18 +119,18 @@
            div.namePlusAND {
                 /* ONLY used for the first person of two total */
                 display:block;
-                font-size: 11.5pt;
+                font-size: 10.5pt;
                 margin-top:0pt;
                 margin-left:0pt;  
-                margin-bottom: 0pt;
+                margin-bottom: -3pt;
                 margin-right:5pt;
                 font-weight: normal;
            }
            
-           div.nameNextToParty {
+           div.onlyOrSecondPerson {
                 /* Used for one person total, or the second of two. THIS ONE IS SPECIAL - it relies on using the width field to work with .party!! */
                 display: inline-block;
-                font-size: 11.5pt;
+                font-size: 10.5pt;
                 margin-top:0pt;
                 margin-left:0pt;  
                 margin-bottom: 0pt;
@@ -168,142 +171,148 @@
         <divLocation>Harris County, Texas Precint 101A</divLocation>
         
         <divLeftSide>
-            <div class="electionTitle">President and Vice President</div>
+            <div class="electionOrProposition">President and Vice President</div>
             <div class="namePlusAND">Gordon Bearce and</div>       
-            <div class="nameNextToParty">Nathan Maclean</div>
+            <div class="onlyOrSecondPerson">Nathan Maclean</div>
             <div class="party">REP</div>
             <hr class ="divideRace">
 
-            <div class="electionTitle">United States Senator</div> 
-            <div class="nameNextToParty">Cecile Cadieux</div>   
+            <div class="electionOrProposition">United States Senator</div> 
+            <div class="onlyOrSecondPerson">Cecile Cadieux</div>   
             <div class="party">REP</div>
             <hr class ="divideRace">
 
-            <div class="electionTitle">Representative in Congress</div>  
-            <div class="nameNextToParty">Pedro Brouse</div>    
+            <div class="electionOrProposition">Representative in Congress</div>  
+            <div class="onlyOrSecondPerson">Pedro Brouse</div>    
             <div class="party">REP</div>
             <hr class ="divideRace">
 
 
-            <div class="electionTitle">Governor</div>
-            <div class="nameNextToParty">Glen Travis Lozier</div>
+            <div class="electionOrProposition">Governor</div>
+            <div class="onlyOrSecondPerson">Glen Travis Lozier</div>
             <div class="party">REP</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">Lieutenant Governor</div>
-            <div class="nameNextToParty">Shane Terrio</div>
+            <div class="electionOrProposition">Lieutenant Governor</div>
+            <div class="onlyOrSecondPerson">Shane Terrio</div>
             <div class="party">REP</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">Comptroller of Public Accounts</div>
-            <div class="nameNextToParty">Greg Converse</div>
+            <div class="electionOrProposition">Comptroller of Public Accounts</div>
+            <div class="onlyOrSecondPerson">Greg Converse</div>
             <div class="party">DEM</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">EXAMPLE OF 2 PERSON TEAM IN THE MIDDLE OF THE LEFT SIDE</div>
+            <div class="electionOrProposition">EXAMPLE OF 2 PERSON TEAM IN THE MIDDLE OF THE LEFT SIDE</div>
             <div class="namePlusAND">TEST PERSON 1 and</div>       
-            <div class="nameNextToParty">PERSON 2</div>
+            <div class="onlyOrSecondPerson">PERSON 2</div>
             <div class="party">^_^</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Commissioner of General Land Office</div>
-            <div class="nameNextToParty">Sam Saddler</div>
+            <div class="electionOrProposition">EXAMPLE OF 2 PERSON TEAM IN THE MIDDLE OF THE LEFT SIDE PLUS AN ELECTION TITLE THAT GOES ON FOR MULTIPLE LINES :)</div>
+            <div class="namePlusAND">TEST PERSON 3 and</div>       
+            <div class="onlyOrSecondPerson">TEST PERSON </div>
+            <div class="party">^_^</div>
+            <hr class ="divideRace">
+            
+            <div class="electionOrProposition">Commissioner of General Land Office</div>
+            <div class="onlyOrSecondPerson">Sam Saddler</div>
             <div class="party">DEM</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">Comissioner of Agriculture</div>
-            <div class="nameNextToParty">Roberto Aron</div>
+            <div class="electionOrProposition">Comissioner of Agriculture</div>
+            <div class="onlyOrSecondPerson">Roberto Aron</div>
             <div class="party">DEM</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">Railroad Commissioner</div>
-            <div class="nameNextToParty">Jillian Balas</div>
+            <div class="electionOrProposition">Railroad Commissioner</div>
+            <div class="onlyOrSecondPerson">Jillian Balas</div>
             <div class="party">REP</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">State Senator</div>
-            <div class="nameNextToParty">Ricardo Nigro</div>
+            <div class="electionOrProposition">State Senator</div>
+            <div class="onlyOrSecondPerson">Ricardo Nigro</div>
             <div class="party">REP</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">State Representative District 134</div>
-            <div class="nameNextToParty">Petra Bencomo</div>
+            <div class="electionOrProposition">State Representative District 134</div>
+            <div class="onlyOrSecondPerson">Petra Bencomo</div>
             <div class="party">REP</div> 
             <hr class ="divideRace">
 
-            <div class="electionTitle">Member State Board of Education District 2</div>
-            <div class="nameNextToParty">Peter Varga</div>
+            <div class="electionOrProposition">Member State Board of Education District 2</div>
+            <div class="onlyOrSecondPerson">Peter Varga</div>
             <div class="party">REP</div> 
             <hr class ="divideRace">
         </divLeftSide> 
 
         <divRightSide>
-            <div class="electionTitle">Presiding Judge Texas Supreme Court Place 3</div>
-            <div class="nameNextToParty">Tim Grasty</div>
+            <div class="electionOrProposition">Presiding Judge Texas Supreme Court Place 3</div>
+            <div class="onlyOrSecondPerson">Tim Grasty</div>
             <div class="party">REP</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Presiding Judge Court of Criminal Appeals Place 3</div>
-            <div class="nameNextToParty">Dan Plouffee</div>
+            <div class="electionOrProposition">Presiding Judge Court of Criminal Appeals Place 3</div>
+            <div class="onlyOrSecondPerson">Dan Plouffee</div>
             <div class="party">REP</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">EXAMPLE OF 2 PERSON TEAM ON THE RIGHT SIDE</div>
+            <div class="electionOrProposition">EXAMPLE OF 2 PERSON TEAM ON THE RIGHT SIDE</div>
             <div class="namePlusAND">TEST PERSON 1 and</div>       
-            <div class="nameNextToParty">PERSON 2</div>
+            <div class="onlyOrSecondPerson">PERSON 2</div>
             <div class="party">^_^</div>
             <hr class ="divideRace">
 
-            <div class="electionTitle"> District Attorney </div>
-            <div class="nameNextToParty">Corey Behnke</div>
+            <div class="electionOrProposition"> District Attorney </div>
+            <div class="onlyOrSecondPerson">Corey Behnke</div>
             <div class="party">REP</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">County Treasurer</div>
-            <div class="nameNextToParty">Dean Caffee</div>
+            <div class="electionOrProposition">County Treasurer</div>
+            <div class="onlyOrSecondPerson">Dean Caffee</div>
             <div class="party">REP</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Sheriff</div>
-            <div class="nameNextToParty">Jason Valle</div>
+            <div class="electionOrProposition">Sheriff</div>
+            <div class="onlyOrSecondPerson">Jason Valle</div>
             <div class="party">LIB</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">County Tax Assessor</div>
-            <div class="nameNextToParty">Randy H. Clemons</div>
+            <div class="electionOrProposition">County Tax Assessor</div>
+            <div class="onlyOrSecondPerson">Randy H. Clemons</div>
             <div class="party">CON</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Justice of the Peace</div>
-            <div class="nameNextToParty">Deborah Kamps</div>
+            <div class="electionOrProposition">Justice of the Peace</div>
+            <div class="onlyOrSecondPerson">Deborah Kamps</div>
             <hr class ="divideRace">
 
-            <div class="electionTitle">County Judge</div>
-            <div class="nameNextToParty">Dan Atchley</div>
+            <div class="electionOrProposition">County Judge</div>
+            <div class="onlyOrSecondPerson">Dan Atchley</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Proposition 1</div>
-            <div class="nameNextToParty">Yes</div>
+            <div class="electionOrProposition">Proposition 1</div>
+            <div class="onlyOrSecondPerson">Yes</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Proposition 2</div>
-            <div class="nameNextToParty">Yes</div>
+            <div class="electionOrProposition">Proposition 2</div>
+            <div class="onlyOrSecondPerson">Yes</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Proposition 3</div>
-            <div class="nameNextToParty">No</div>
+            <div class="electionOrProposition">Proposition 3</div>
+            <div class="onlyOrSecondPerson">No</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Proposition 4</div>
-            <div class="nameNextToParty">Yes</div>
+            <div class="electionOrProposition">Proposition 4</div>
+            <div class="onlyOrSecondPerson">Yes</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Proposition 5</div>
-            <div class="nameNextToParty">No</div>
+            <div class="electionOrProposition">Proposition 5</div>
+            <div class="onlyOrSecondPerson">No</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">Proposition 6</div>
-            <div class="nameNextToParty">Yes</div>
+            <div class="electionOrProposition">Proposition 6</div>
+            <div class="onlyOrSecondPerson">Yes</div>
             <hr class ="divideRace">
         </divRightSide>
 
