@@ -6,11 +6,14 @@
 
         KNOWN ISSUES: 
         1. An extremely long first or last name can cause issues.
-           Make sure to limit how big each inputted individual word can be.
+           Solution: Make sure to limit how big each inputted individual word can be.
+
+        2. If we put in too many elements, it will go on to the next page.
+           This causes problems, since the headers don't show up on the next page.
+           Solution: NOT SURE
      -->
     <head>
         <style>
-            
             html * { 
                 /*Set the font for the entire document to Avenir Next*/
                 font-family: "Avenir Next" !important; 
@@ -43,8 +46,6 @@
                 */ 
             }
             
-
-            
             hr.divideRace {
                 /* Formatting for the black horizontal line that divides up the races */
                 display: block;
@@ -54,8 +55,6 @@
                 margin-bottom: 14pt;
                 margin-right: 0pt;
                 font-weight: bold;    
-                
-                
             }
         
             h1 {
@@ -67,8 +66,6 @@
                 margin-bottom: 0pt;
                 margin-right: 0pt;
                 font-weight: bold;
-
-
             }  
             
             h2 {
@@ -81,7 +78,6 @@
                 margin-left: 106pt;
                 margin-bottom: 0pt;
                 font-weight: bold;
-
             }  
 
             divDate {
@@ -106,21 +102,6 @@
                 font-weight: normal;
             } 
             
-    
-            divLeftSide {
-                /*Left side of the page*/
-                float: left;
-                width: 190pt;
-                padding-left: 36pt;
-            }
-            
-            divRightSide {
-                /*Right side of the page*/
-                float: right;
-                width: 190pt;
-                margin-right: 36pt;
-            }
-        
             div.electionTitle {
                 /*The name of each election */
                 display:block;
@@ -156,13 +137,26 @@
             }
             
             div.party {
-                /* SPECIAL CLASS - only used for sticking party on the same line as the (second, if a team) person being voted for */  
+                /* SPECIAL - only used for sticking party on the same line as the (second, if a team) person being voted for */  
                 display: inline-block;
                 text-align: right;
                 font-weight:bold;
                 width: 8%;
             }
             
+            divLeftSide {
+                /*SPECIAL - Contains the left side of the page*/
+                float: left;
+                width: 190pt;
+                padding-left: 36pt;
+            }
+            
+            divRightSide {
+                /*SPECIAL - Contains the right side of the page*/
+                float: right;
+                width: 190pt;
+                margin-right: 36pt;
+            }
         </style>
     </head>
     
@@ -204,6 +198,12 @@
             <div class="electionTitle">Comptroller of Public Accounts</div>
             <div class="nameNextToParty">Greg Converse</div>
             <div class="party">DEM</div> 
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">EXAMPLE OF 2 PERSON TEAM IN THE MIDDLE OF THE LEFT SIDE</div>
+            <div class="namePlusAND">TEST PERSON 1 and</div>       
+            <div class="nameNextToParty">PERSON 2</div>
+            <div class="party">^_^</div>
             <hr class ="divideRace">
             
             <div class="electionTitle">Commissioner of General Land Office</div>
@@ -248,17 +248,64 @@
             <div class="party">REP</div>
             <hr class ="divideRace">
             
-            <div class="electionTitle">District Attorney</div>
+            <div class="electionTitle">EXAMPLE OF 2 PERSON TEAM ON THE RIGHT SIDE</div>
+            <div class="namePlusAND">TEST PERSON 1 and</div>       
+            <div class="nameNextToParty">PERSON 2</div>
+            <div class="party">^_^</div>
+            <hr class ="divideRace">
+
+            <div class="electionTitle"> District Attorney </div>
             <div class="nameNextToParty">Corey Behnke</div>
             <div class="party">REP</div>
             <hr class ="divideRace">
             
+            <div class="electionTitle">County Treasurer</div>
+            <div class="nameNextToParty">Dean Caffee</div>
+            <div class="party">REP</div>
+            <hr class ="divideRace">
             
+            <div class="electionTitle">Sheriff</div>
+            <div class="nameNextToParty">Jason Valle</div>
+            <div class="party">LIB</div>
+            <hr class ="divideRace">
             
+            <div class="electionTitle">County Tax Assessor</div>
+            <div class="nameNextToParty">Randy H. Clemons</div>
+            <div class="party">CON</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Justice of the Peace</div>
+            <div class="nameNextToParty">Deborah Kamps</div>
+            <hr class ="divideRace">
+
+            <div class="electionTitle">County Judge</div>
+            <div class="nameNextToParty">Dan Atchley</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Proposition 1</div>
+            <div class="nameNextToParty">Yes</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Proposition 2</div>
+            <div class="nameNextToParty">Yes</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Proposition 3</div>
+            <div class="nameNextToParty">No</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Proposition 4</div>
+            <div class="nameNextToParty">Yes</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Proposition 5</div>
+            <div class="nameNextToParty">No</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Proposition 6</div>
+            <div class="nameNextToParty">Yes</div>
+            <hr class ="divideRace">
         </divRightSide>
 
     </body>
-        
-        
-        
-        </html>
+</html>
