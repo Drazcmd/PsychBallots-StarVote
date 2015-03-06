@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <!-- 
+        Clayton Drazner
+        STAR Vote
+
+        KNOWN ISSUES: 
+        1. An extremely long first or last name can cause issues.
+           Make sure to limit how big each inputted individual word can be.
+     -->
     <head>
         <style>
             
@@ -9,7 +17,8 @@
                 color: black;
                 
                 /* STYLE GUIDE for CSS:
-                With the exception of the 2 floating divs I use to split up the left and right side:
+                Excepting what is listed at the bottom of this:
+                
                 Each piece will have a 1 line description
                 All colons will have one space following them
                 There will be no spaces before the semicolons
@@ -26,12 +35,17 @@
                 right margin
                 bolding weight of font
                 
+                
+                EXCEPTIONS:
+                1.xdivLeftSide and divRightSide: 2 floating divs I use to split up the left and right side
+                
+                2. Div.party and div.nameNextToParty: Getting the party name inline to the right of candidate names
                 */ 
             }
             
 
             
-            .divideRace {
+            hr.divideRace {
                 /* Formatting for the black horizontal line that divides up the races */
                 display: block;
                 font-size: 13.5pt;
@@ -77,7 +91,7 @@
                 margin-top: -5pt;
                 margin-left: 36pt;  
                 margin-bottom: 0pt;
-                margin-right: 0pt;
+                margin-right: 36pt;
                 font-weight: normal;
             } 
             
@@ -88,38 +102,38 @@
                 margin-top: -2.5pt;
                 margin-left: 36pt;  
                 margin-bottom: 19pt;
-                margin-right: 0pt;
+                margin-right: 36pt;
                 font-weight: normal;
             } 
-           
+            
+    
             divLeftSide {
                 /*Left side of the page*/
                 float: left;
-                width: 44%;
+                width: 190pt;
                 padding-left: 36pt;
-                
             }
             
             divRightSide {
                 /*Right side of the page*/
                 float: right;
-                width: 44%;
-                
+                width: 190pt;
+                margin-right: 36pt;
             }
         
-            .electionTitle {
+            div.electionTitle {
                 /*The name of each election */
                 display:block;
                 font-size: 11.5pt;
                 margin-top:0pt;
                 margin-left:0pt;  
-                margin-bottom: 8pt;
+                margin-bottom: 4pt;
                 margin-right:0pt;
                 font-weight: bold
             }
             
-           .namePlusAND {
-                /* ONLY used for the first person of two total. Will contain 1 <p> block */
+           div.namePlusAND {
+                /* ONLY used for the first person of two total */
                 display:block;
                 font-size: 11.5pt;
                 margin-top:0pt;
@@ -129,16 +143,26 @@
                 font-weight: normal;
            }
            
-           .namePlusParty {
-                /* Used for one person total, or the second of two. Will contain 2 <p> blocks */
-                display:block;
+           div.nameNextToParty {
+                /* Used for one person total, or the second of two. THIS ONE IS SPECIAL - it relies on using the width field to work with .party!! */
+                display: inline-block;
                 font-size: 11.5pt;
                 margin-top:0pt;
                 margin-left:0pt;  
                 margin-bottom: 0pt;
                 margin-right:0pt;
                 font-weight: normal;
-            }  
+                width: 82%;
+            }
+            
+            div.party {
+                /* SPECIAL CLASS - only used for sticking party on the same line as the (second, if a team) person being voted for */  
+                display: inline-block;
+                text-align: right;
+                font-weight:bold;
+                width: 8%;
+            }
+            
         </style>
     </head>
     
@@ -148,36 +172,91 @@
  
         <divDate>November 8, 2016, General Election</divDate> 
         <divLocation>Harris County, Texas Precint 101A</divLocation>
-         
+        
         <divLeftSide>
             <div class="electionTitle">President and Vice President</div>
             <div class="namePlusAND">Gordon Bearce and</div>       
-            <div class="namePlusParty">Nathan Maclean</div>
+            <div class="nameNextToParty">Nathan Maclean</div>
+            <div class="party">REP</div>
             <hr class ="divideRace">
 
             <div class="electionTitle">United States Senator</div> 
-            <div class="namePlusParty">Cecile Cadieux</div>        
-            <hr class ="divideRace">
-            
-            <div class="electionTitle">Representative in Congress</div>  
-            <div class="namePlusParty">Pedro Brouse</div>         
+            <div class="nameNextToParty">Cecile Cadieux</div>   
+            <div class="party">REP</div>
             <hr class ="divideRace">
 
-            <div class="electionTitle">TEST OF MAKING A SUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUPER LONG TITLE</div>
-            <div class="namePlusParty">TEST</div>    
+            <div class="electionTitle">Representative in Congress</div>  
+            <div class="nameNextToParty">Pedro Brouse</div>    
+            <div class="party">REP</div>
+            <hr class ="divideRace">
+
+
+            <div class="electionTitle">Governor</div>
+            <div class="nameNextToParty">Glen Travis Lozier</div>
+            <div class="party">REP</div> 
             <hr class ="divideRace">
             
-            <div class="electionTitle">SECOND TEST OF MAKING A SUUU UUU UUU UUU UUU UU UUUUU UUPER LONG TITLE</div>
-            <div class="namePlusParty">TEST</div>    
-        </divLeftSide> 
-        
-        <divRightSide>
-            <div class="electionTitle">President and Vice President</div>
-            <div class="namePlusAND">Gordon Bearce and</div>       
-            <div class="namePlusParty">Nathan Maclean</div>
+            <div class="electionTitle">Lieutenant Governor</div>
+            <div class="nameNextToParty">Shane Terrio</div>
+            <div class="party">REP</div> 
             <hr class ="divideRace">
+            
+            <div class="electionTitle">Comptroller of Public Accounts</div>
+            <div class="nameNextToParty">Greg Converse</div>
+            <div class="party">DEM</div> 
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Commissioner of General Land Office</div>
+            <div class="nameNextToParty">Sam Saddler</div>
+            <div class="party">DEM</div> 
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Comissioner of Agriculture</div>
+            <div class="nameNextToParty">Roberto Aron</div>
+            <div class="party">DEM</div> 
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Railroad Commissioner</div>
+            <div class="nameNextToParty">Jillian Balas</div>
+            <div class="party">REP</div> 
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">State Senator</div>
+            <div class="nameNextToParty">Ricardo Nigro</div>
+            <div class="party">REP</div> 
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">State Representative District 134</div>
+            <div class="nameNextToParty">Petra Bencomo</div>
+            <div class="party">REP</div> 
+            <hr class ="divideRace">
+
+            <div class="electionTitle">Member State Board of Education District 2</div>
+            <div class="nameNextToParty">Peter Varga</div>
+            <div class="party">REP</div> 
+            <hr class ="divideRace">
+        </divLeftSide> 
+
+        <divRightSide>
+            <div class="electionTitle">Presiding Judge Texas Supreme Court Place 3</div>
+            <div class="nameNextToParty">Tim Grasty</div>
+            <div class="party">REP</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">Presiding Judge Court of Criminal Appeals Place 3</div>
+            <div class="nameNextToParty">Dan Plouffee</div>
+            <div class="party">REP</div>
+            <hr class ="divideRace">
+            
+            <div class="electionTitle">District Attorney</div>
+            <div class="nameNextToParty">Corey Behnke</div>
+            <div class="party">REP</div>
+            <hr class ="divideRace">
+            
+            
+            
         </divRightSide>
-        
+
     </body>
         
         
