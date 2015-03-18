@@ -1,0 +1,742 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Fonts */
+@font-face {
+	font-family: 'Univers';
+	src:	url('fonts/UniversLTStd-Black.eot');
+	src:	local('☺'),
+	url('fonts/UniversLTStd-Black.ttf') format('truetype'),
+	url('fonts/UniversLTStd-Black.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Univers';
+	src:	url('fonts/UniversLTStd-Bold.eot');
+	src:	local('☺'),
+	url('fonts/UniversLTStd-Bold.ttf') format('truetype'),
+	url('fonts/UniversLTStd-Bold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Univers';
+	src:	url('fonts/UniversLTStd.eot');
+	src:	local('☺'),
+	url('fonts/UniversLTStd.ttf') format('truetype'),
+	url('fonts/UniversLTStd.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNext';
+	src: url('fonts/avenirnextltpro-bold.eot');
+	src: local('☺'),
+	url('fonts/avenirnextltpro-bold.woff') format("woff"),
+	url('fonts/avenirnextltpro-bold.ttf') format("truetype"),
+	url('fonts/avenirnextltpro-bold.svg#AvenirNextBold') format("svg");
+	font-weight:bold;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'AvenirNext';
+	src: url('fonts/avenirnextltpro-bolditalic.eot');
+	src: local('☺'),
+	url('fonts/avenirnextltpro-bolditalic.woff') format("woff"),
+	url('fonts/avenirnextltpro-bolditalic.ttf') format("truetype"),
+	url('fonts/avenirnextltpro-bolditalic.svg#AvenirNextBoldItalic') format("svg");
+	font-weight:bold;
+	font-style:italic;
+}
+@font-face {
+	font-family: 'AvenirNext';
+	src: url('fonts/avenirnextltpro-regular.eot');
+	src: local('☺'),
+	url('fonts/avenirnextltpro-regular.woff') format("woff"),
+	url('fonts/avenirnextltpro-regular.ttf') format("truetype"),
+	url('fonts/avenirnextltpro-regular.svg#AvenirNextRegular') format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'AvenirNext';
+	src: url('fonts/avenirnextltpro-italic.eot');
+	src: local('☺'),
+	url('fonts/avenirnextltpro-italic.woff') format("woff"),
+	url('fonts/avenirnextltpro-italic.ttf') format("truetype"),
+	url('fonts/avenirnextltpro-italic.svg#AvenirNextItalic') format("svg");
+	font-weight:normal;
+	font-style:italic;
+}
+
+
+
+/* Page Formatting */
+html, body {
+	font-family: "Univers",Helvetica,Arial,Sans-serif, serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden; /*Turns off page scrolling*/
+}
+#container{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+}
+#Content {
+	position: relative;
+	align: center;
+	width: 100%;
+	height: 100%;
+	top: 115px; /* at 350px */
+	/* min-width: 800px;
+	min-height: 960px; */
+}
+#header {top:0; left: 0; right: 0; width: 100%; height: 60px; position: fixed;
+	background: rgba(0, 0, 0, 1) -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+	box-shadow: 0 30px 0 0 rgba(255,255,255,0.1) inset; display: block; margin: 0; border: 0; padding: 0;
+}
+#footer {bottom:0; width: 100%; height: 60px; position: fixed;
+	background: rgba(0, 0, 0, 1) -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+	box-shadow: 0 30px 0 0 rgba(255,255,255,0.1) inset; display: block;
+}
+.container_hf {width: 768px; margin: 0 auto; display: block;
+}
+
+
+/* Formatted Elements */
+h1 {
+	padding: 8px 0 12px;
+	font-size: 23px;
+	line-height: 30px;
+	border: 0;
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	vertical-align: baseline;
+}
+strong {
+	font-weight: 900;
+}
+
+/* Authentication Entry */
+#auth{
+	position: absolute;
+	display: block;
+	top: 200px;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
+}
+#enterID{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	padding: 10px 0;
+	border: 0;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	outline: 0;
+	display: block;
+}
+#idText{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#ID{
+	padding-top: 4px;
+	width: 236px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(200,200,200,1);
+	border: thin;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers",Helvetica,Arial,Sans-serif, serif;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 600;
+	box-shadow: 0 80px 0 -60px rgba(255,255,255,0.3) inset, 0 2px 0 rgba(255,255,255,0.6) inset, 0 2px 0 rgba(255,255,255,0.3), 0 -2px 0 rgba(0,0,0,0.6);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	border-radius: 6px;
+	/* align-items: flex-start; */
+	text-align: center;
+	box-sizing: border-box;
+	display: block;
+}
+/* Election Information */
+#info{
+	position: absolute;
+	left: 50%;
+	margin-left: -254px;
+	width: 508px;
+	top: 200px;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+	outline: 0;
+	display: block;
+}
+/* Voting instructions */
+#first_instructions{
+	position: absolute;
+	left: 50%;
+	margin-left: -254px;
+	top: 200px;
+	width: 508px;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+	outline: 0;
+	display: block;
+}
+
+
+
+/* Ballot Completion Section */
+#VotingContentDIV{
+	position: relative;
+	top: 200px;
+	width: 676px;
+	height: 100%;
+	margin: 0 auto;
+	display: block;
+}
+#racetitle.racetitle{ /*Race Title*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 688px;
+	font-weight: 900;
+	border:0;
+	font-family: inherit;
+	cursor: pointer;
+	font-size: 23px;
+	line-height: 30px;
+	margin: 0;
+	outline: 0;
+	padding: 8px 0 12px;
+	vertical-align: baseline;
+	display: block;
+	text-align: left;
+}
+#voteFor{ /*Vote for 1.*/
+	font-weight: 900;
+	width: 688px;
+	border: 0;
+	font-family: inherit;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0;
+	outline: 0;
+	padding: 10px 0;
+	vertical-align: baseline;
+	display: block;
+	text-align: left;
+}
+#TitleDIV.propTitle{ /*Proposition Title*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 688px; */
+	font-weight: 900;
+	border:0;
+	font-family: inherit;
+	cursor: pointer;
+	font-size: 23px;
+	line-height: 30px;
+	margin: 0;
+	outline: 0;
+	padding: 8px 0 12px;
+	vertical-align: baseline;
+	display: block;
+	text-align: left;
+}
+
+#propText{ /*Choose yes or no. */
+	/*position: absolute;*/
+	/*top: 60px;*/
+	/*left:0;*/
+	font-weight: 900;
+	/*width: 688px;*/
+	border: 0;
+	font-family: inherit;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 28px;
+	margin-top: 22px;
+	outline: 0;
+	padding: 10px 0;
+	vertical-align: baseline;
+	display: block;
+	text-align: left;
+}
+
+#racetitle.propText{ /*Proposition Text*/
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*top: 124px;*/
+	font-family: inherit;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 400;
+	display: block;
+	text-align: left;
+}
+#titles, #votes{
+	position: relative;
+	display: block;
+	height: auto;
+}
+.candidate, .propchoice{ /*Class for selection boxes with races and propositions*/
+	display: block;
+	width: 628px;
+	height: 52px;
+	border: 1px solid rgba(0,0,0,1.00);
+	cursor: pointer;
+	margin-top: 20px;
+	outline: 0;
+	padding: 0;
+}
+.voteButton{ /* Makes the select image (checkmark + blue) appear behind the name and party */
+	position: absolute;
+	z-index: -1; /*-1*/
+}
+label > input{ /*Hides radio button*/
+	visibility: hidden; /*makes input not clickable*/
+	position:absolute; /*removes input from document flow*/
+}
+label > input + img{ /* IMAGE STYLES */
+	margin: 0;
+	cursor:pointer;
+	visibility: hidden; /*makes input not clickable*/
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+	margin: 0;
+	visibility: visible;
+}
+.name{ /*candidate name style */
+	display: inline-block;
+	float: left;
+	padding-left: 65px;
+	padding-top: 15px;
+	/*z-index: 1; */
+	font-size: 20px;
+	line-height: 28px;
+	-webkit-user-select: none;
+}
+.selectparty{ /*party style */
+	display: inline-block;
+	float: right;
+	padding-right: 35px;
+	padding-top: 15px;
+	/* z-index: 1; */
+	font-size: 20px;
+	line-height: 28px;
+	-webkit-user-select: none;
+}
+#progress{ /* Progress in footer */
+	display:inline-block;
+	width: 236px;
+	height: 40px;
+	text-align: center;
+	color:rgba(255,255,255,1.00);
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	font-family: inherit;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 900;
+}
+/*#clear1{
+	display: block;
+	z-index: 2;
+	position: absolute;
+	width: 628px;
+	height: 52px;
+	float: left;
+	background-color: white;
+}*/
+/*input[type="radio"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox;     
+    -o-appearance: checkbox;      
+}
+input[type="radio"]{
+  /* Double-sized Checkboxes 
+  -ms-transform: scale(3); 
+  -moz-transform: scale(3); 
+  -webkit-transform: scale(3); 
+  -o-transform: scale(3); 
+  position:relative;
+  visibility: inherit;
+} */
+
+/*Review Screen*/
+#reviews{
+	position: absolute;
+	width: 845px;
+	height: 1650px;
+	display: none;
+	top: 0;
+	left: 50%;
+	margin-left: -423px;
+	margin-top: 0;
+}
+#reviewTop{
+	position: absolute;
+	width: 845px;
+	display: block;
+	top: 0;
+	left: 50%;
+	margin-left: -423px;
+	margin-top: 0;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 23px;
+	line-height: 30px;
+	text-align: left;
+	outline: 0;
+}
+#reviewHeader{
+	margin-top: 0;
+}
+#reviewInstructions{
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: left;
+	padding-bottom: 30px;
+	margin-bottom: 0;
+	outline: 0;
+	display: block;
+}
+#review1{
+	width: 400px;
+	display: inline-block;
+	float: left;
+	margin-top: 135px;
+}
+#review2{
+	width: 400px;
+	display: inline-block;
+	float: right;
+	margin-top: 135px;
+}
+.race { /*review screen*/
+	cursor: pointer;
+	clear: both;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+	margin-bottom: 10px;
+	width: 400px;
+}
+.title{
+	padding-bottom: 5px;
+}
+.sel{
+	font-size: 18px;
+	line-height: 26px;
+	text-align: left;
+	display: block;
+	border: thin solid black;
+	background-color: white;
+	padding: 17px 6px 0;
+	margin-bottom: 18px;
+	width: 100%;
+	height: 43px;
+	max-height: 43px;
+}
+.noSel{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	display: block;
+	border: thin solid black;
+	background-color: rgba(255,221,221,1.00);
+	padding: 6px 6px 6px 6px;
+	margin-bottom: 18px;
+	width: 100%;
+	height: 47px;
+	max-height: 47px;
+}
+.raceSel{
+	display: inline-block;
+	float: left;
+}
+.party{
+	display: inline-block;
+	float: right;
+}
+/* Submit Screen and Final Confirmation screen */
+#submitScreen, #confirmation{
+	clear: both;
+	position: absolute;
+	left: 50%;
+	margin-left: -344px;
+	top: 715px;
+	width: 688px;
+	font-family: inherit;
+	font-style: inherit;
+	text-align: left;
+	outline: 0;
+	display: block;
+}
+#submitHeading, #confHeading{
+	font-size: 23px;
+	line-height: 30px;
+	display: block;
+}
+#submitText, #confText{
+	font-size: 20px;
+	line-height: 28px;
+	display: block;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+}
+#submitScreenBtns{
+	margin-top: 25px;
+	padding-bottom: 25px;
+	width: 100%;
+	display: block;
+}
+
+/* Buttons */
+/*Big Green*/
+#button_begin{
+	background-color: rgba(87,178,34,1);
+	color: rgba(255,255,255,0.8);
+	text-shadow: none;
+	width: 460px;
+	margin: 10px 0;
+	box-shadow: 0 80px 0 -60px rgba(255,255,255,0.3) inset, 0 2px 0 rgba(255,255,255,0.3), 0 2px 0 rgba(0,0,0,0.6);
+	padding: 4px 0 0;
+	height: 40px;
+	display: block;
+	float: left;
+	/*background: rgba(200,200,200,1); */
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers",Helvetica,Arial,Sans-serif, serif;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+/*Forward Nav*/
+#Begin{
+	display: inline-block;
+	padding: 4px 60px 0 30px;
+	float: right;
+	color: rgba(255,255,255,1.00);
+	text-shadow: none;
+	background-size: 40px 320px;
+	background: rgba(87, 178, 34, 1) url('images/sprite-button.png') no-repeat 130px -280px;
+	margin: 10px 10px 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers", Helvetica, Arial, Sans-serif, serif;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+#Next.next{
+	display: inline-block;
+	padding: 4px 60px 0 30px;
+	float: right;
+	color: rgba(255,255,255,1.00);
+	text-shadow: none;
+	background-size: 40px 320px;
+	background: rgba(87, 178, 34, 1) url('images/sprite-button.png') no-repeat 130px -280px;
+	margin: 10px 10px 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers", Helvetica, Arial, Sans-serif, serif;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+#Next.skip{
+	display: inline-block;
+	padding: 4px 60px 0 30px;
+	float: right;
+	color: black;
+	text-shadow: none;
+	background-size: 40px 320px;
+	background: rgba(200, 200, 200, 1) url('images/sprite-button.png') no-repeat 130px -280px;
+	margin: 10px 10px 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;.
+	cursor: pointer;
+	font-family: "Univers", Helvetica, Arial, Sans-serif, serif;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+#Review{
+	display: inline-block;
+	padding: 2px 30px 0 30px;
+	float: right;
+	background-color: rgba(87,178,34,1);
+	color: rgba(255,255,255,1.00);
+	text-shadow: none;
+	margin: 10px 10px 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers", Helvetica, Arial, Sans-serif, serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/* Back Nav*/
+#Back, #Previous{
+	display:inline-block;
+	padding: 4px 30px 0 60px;
+	float: left;
+	color: rgba(0,0,0,0.8);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	background-size: 40px 320px;
+	background: rgba(200, 200, 200, 1) url('images/sprite-button.png') no-repeat 60px -80px;
+	margin: 10px 10px 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers", Helvetica, Arial, Sans-serif, serif;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+#returnToBallot{ /*Returns to review screen*/
+	display: inline-block;
+	padding: 4px 30px 0 30px;
+	float: left;
+	background-color: rgba(200,200,200,1);
+	color: rgba(0,0,0,0.8);
+	text-shadow: none;
+	margin: 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers",Helvetica,Arial,Sans-serif,serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+#endVoting{ /*ends voting task and prints ballot*/
+	display: inline-block;
+	padding: 2px 30px 0 30px;
+	float: right;
+	background-color: rgba(87,178,34,1);
+	color: rgba(255,255,255,1.00);
+	text-shadow: none;
+	margin: 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers",Helvetica,Arial,Sans-serif,serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+#finishUp{ /* goes to final screen confirming votes should be cast*/
+	display: inline-block;
+	padding: 2px 30px 0 30px;
+	float: right;
+	background-color: rgba(87,178,34,1);
+	color: rgba(255,255,255,1.00);
+	text-shadow: none;
+	margin: 10px 10px 0;
+	width: 236px;
+	height: 40px;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Univers",Helvetica,Arial,Sans-serif, serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	border-radius: 6px;
+	align-items: flex-start;
+	text-align: center;
+	box-sizing: border-box;
+}
+#submit{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 25px;
+	width: 25px;
+	background-color: black;
+	border: 0;
+}
+#Debug {
+	position: absolute;
+	left: 200px;
+	z-index: -4;
+}
