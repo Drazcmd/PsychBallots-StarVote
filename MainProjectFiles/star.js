@@ -97,7 +97,15 @@ function start(){
 
     for (var j = 0; j < numberOfRaces; j++){
         races1[j] = {};
+        //qxml.getElementsByTagName pulls the listed race out of the HTML file
+        //The format for it is in this order: title, number, candidate1, candidate2, candidate3...
         var currentRace = qxml.getElementsByTagName("race")[j];
+        console.log("HELLO THERE!");
+        console.log("This is the races field from the xml I think -> ");
+        console.log(qxml.getElementsByTagName("race"));
+        console.log("This is the current race entry in the xml races field -> ");
+        console.log(currentRace);
+        console.log("no idea what this is -> " + currentRace.getElementsByTagName("number")[0].firstChild.nodeValue);
         races1[j].title = currentRace.getElementsByTagName("title")[0].firstChild.nodeValue;
         races1[j].number = currentRace.getElementsByTagName("number")[0].firstChild.nodeValue;
         races1[j].cand = currentRace.getElementsByTagName("candidate");
