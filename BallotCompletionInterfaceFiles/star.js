@@ -1027,26 +1027,155 @@ function finish() {
     //document.getElementById("Title").innerHTML = "Vote Submitted!"
 }
 
+
+/**
+ * I assume that this will take my HTML file I've generated and print it; that being said, I need
+ * to double check it is actually a finished function and not just a placeholder. Also, I need
+ * to find a way to deal with the popup issue.
+ **/
 function print(){
     var html = generatePrintableHTML();
     document.getElementById("printout").innerHTML = 'data:text/html;charset=utf-8,' + encodeURI(html);
-
-
-
-
     window.frames["printout"].print();
 }
 
+
+/**
+ * This code is three months old, I had started working on it before I got sick
+ 
+ * This function returns the entire html page for the ballot print (AKA 'Record of Voter
+ *  Intent'), INCLUDING The CSS <style> block (see the example file for any questions)
+ *
+ * Inputs:
+ *      This code uses the global 'races' array but doesn't actually take in any inputs (as of now)
+ *      If we refactor this code to get rid of the constant use of  globals then this will need to
+ *      take races as an input.
+ *
+ * Outputs:
+ *      A string that holds the entire html page for the ballot print (AKA 'Re
+ *
+ **/
 function generatePrintableHTML() {
     var output = '';
 
+    //initial setup
     output += '<html>';
+    output += '<head>';
+    output += '<style>';
 
 
+
+    //CSS overall font
+
+    output += 'html * { font-family: "Avenir Next" !important; color: black; output += }';
+
+    //CSS classes
+    output += 'hr.divideRace { /* Formatting for the black horizontal line that divides up the races */ display: block; font-size: 13.5pt; margin-top: -1.5pt; margin-left: 0pt; margin-bottom: 10pt; margin-right: 0pt; font-weight: bolder; }  h1 { /*Upper left header ("Official Ballot")*/ display: inline; font-size: 13.5pt; margin-top: 0pt; margin-left: 36pt; margin-bottom: 0pt; margin-right: 0pt; font-weight: bold; }  h2 { /*Upper rightt header ("PLACE THIS IN BALLOT BOX")*/ display: inline; text-align: right; font-size: 17.3pt; margin-top: 0pt; margin-right: 36pt; margin-left: 106pt; margin-bottom: 0pt; font-weight: bold; }  divDate { /*Date, just underneath the first (upper left) header*/ display:block; font-size: 10.1pt; margin-top: -5pt; margin-left: 36pt; margin-bottom: 0pt; margin-right: 36pt; font-weight: normal; }  divLocation { /*Location, just underneath the date*/ display: block; font-size: 10.1pt; margin-top: -2.5pt; margin-left: 36pt; margin-bottom: 19pt; margin-right: 36pt; font-weight: normal; }  div.electionOrProposition { /*The name of each election */ display:block; font-size: 11pt; margin-top:0pt; margin-left:0pt; margin-bottom: 1.5pt; margin-right:0pt; font-weight: bold }  div.namePlusAND { /* ONLY used for the first person of two total */ display:block; font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight: normal; }  div.onlyOrSecondPerson { /* Used for one person total, or the second of two. THIS ONE IS SPECIAL - it relies on using the width field to work with .party!! */ display: inline-block; font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight: normal; width: 82%; }  div.party { /* SPECIAL - only used for sticking party on the same line as the (second, if a team) person being voted for */ display: inline-block; text-align: right; font-weight:bold; width: 8%; }  divLeftSide { /*SPECIAL - Contains the left side of the page*/ float: left; width: 190pt; padding-left: 36pt; }  divRightSide { /*SPECIAL - Contains the right side of the page*/ float: right; width: 190pt; margin-right: 36pt; }'
+    output += '</style>';
+    output += '</head>';
+
+
+    //actual data
+    output += '<body>';
+
+    //TODO - format this better (leaving as is for now since it doesn't affect output. See exapmle CSS page for details)
+    output += '<h1>Official Ballot</h1> <h2>PLACE THIS IN BALLOT BOX</h2>  <divDate>November 8, 2016, General Election</divDate> <divLocation>Harris County, Texas Precint 101A</divLocation>';
+
+    //now formatting the races on the left side of the printout page
+    output += '<divLeftSide>';
+
+    //first of the two main for-loop where we auto-generate stuff
+
+    //TODO - Check this setup is ok
+    for(var x=0; x<races.length/2; x++) { //TODO - check for rounding errors.
+        // Each iteration focueses on one particular race or proposition
+        var nextLeftSideBlock =  generateOneBlockHTML();
+        output += nextLeftSideBlock;
+    }
+
+    output += '</divLeftSide>';
+
+    //now the same thing for the races on the right side of the printout page
+    output += '<divRightSide>';
+
+    //second of the main for-loops where we auto-generate stuff
+    for(var x=races.length/2; x< x.Length; x++) { //TODO - again, check for rounding errors
+        // Each iteration focueses on one particular race or proposition
+        var nextRightSideBlock =  generateOneBlockHTML();
+        output += nextLeftSideBlock;
+    }
+    output += '</divRightSide>';
+
+    //now just close it up
+    output += '</body>';
     output += '</html>';
-
     return output;
 }
+/**
+ * A helper function used for each iteration of the for loops in the main HTML generating function
+ * Each iteration focueses on one particular race or proposition
+ *
+ *  STYLE GUIDE for CSS:
+ *
+ *     Excepting what is listed at the bottom of this:
+ *     Each piece will have a 1 line description
+ *     All colons will have one space following them
+ *     There will be no spaces before the semicolons
+ *     Depending on the font weight, you may need to change the size slightly
+ *     Prefer using top margins for spacing when possible
+ *
+ *     The order shall go:
+ *     description
+ *     display
+ *     fontsize
+ *     top margin (basically, go counterclockwise)
+ *     left margin
+ *     bottom margin
+ *     right margin
+ *     bolding weight of font
+ *
+ *
+ *     EXCEPTIONS:
+ *        1.xdivLeftSide and divRightSide: 2 floating divs I use to split up the left and right side
+ *
+ *        2. Div.party and div.onlyOrSecondPerson: Getting the party name inline to the right of candidate names
+ */
+function generateOneBlockHTML() {
+    var chosenCandidate;
+    var chosenCandidateParty; //null for propositions (I hope?)
+    var selection = false; //helps figure out if there was a selectoin
+
+    //determine who the person voted for, if any
+    for(var l=0; l<races[x].candidates.length;l++) {
+        if(races[x].candidates[l].voted==true) {
+            selection = true;
+            chosenCandidate = races[x].candidates[l].name;
+            chosenCandidateParty = candidates[l].party;
+        }
+    }
+
+    //this means the voter skipped this one, and didn't make a selection
+    if (selection == false) {
+        //TODO - say no selection on the ballot. Don't just leave it blank!
+    }
+
+    //this means the voter DID make a selection
+    else if (selection == true) {
+
+
+    }
+    //should NEVER execute this block (if here, 'YOU DUN GOOFED')
+    else {
+        //TODO - figure out what to do in bizarre screwup bug situations. Throw an execption?
+
+    }
+
+}
+
+
+// JavaScript Document
+
+
 
 
 // JavaScript Document
