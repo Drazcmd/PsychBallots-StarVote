@@ -1242,8 +1242,8 @@ function generatePrintableHTML() {
  *        2. Div.party and div.onlyOrSecondPerson: Getting the party name inline to the right of candidate names
  */
 function handleOneBlockHTML(blockNumber) {
-    var chosenCandidate;
-    var chosenCandidateParty; //should be just null for propositions (I hope?)
+    var chosenTicket;
+    var chosenTicketParty; //should be just null for propositions (I hope?)
     var nameOfRace = races[blockNumber].title;
     var selection = false; //flag for if there was a selectoin
     var twoPersonSelection = false; //for now, just a flag for presidential elections (two people on ticket)
@@ -1266,6 +1266,7 @@ function handleOneBlockHTML(blockNumber) {
     //races[blockNumber] gets something that looks like:          Object {title: "President and Vice President", number: "1", cand: HTMLCollection[3], candidates: Array[3]}
     //races[blockNumber].candidates[candidateNumber] gets something like:           Object {index: 1, voted: true, name: "Vernon Stanley Albury and Richard Rigby", party: "DEM"}
     //the blockNumber, the races[blockNumber].candidate[candidateNumber].name and .party, and races[blockNumber].title are the four things I really need to generate the block
+    //note that the internal logic for a proposition is identical, the "names" are 'yes' and 'no' and the "party" is ' '
     for(var l=0; l <races[blockNumber].candidates.length; l++) {
         if(races[blockNumber].candidates[l].voted==true) {
             selection = true;
@@ -1412,6 +1413,13 @@ function generateBlock_NOSELECTION(blockNumber, nameOfRace) {
     constructingBlock += '<hr class ="divideRace">';
 
     return constructingBlock;
+}
+
+function generateBlock_proposition(blockNumber, answerSelection) {
+    constructingBlock += '<div class="electionOrProposition">' + nameOfRace +  '</div>';
+    constructingBlock += '<div class="onlyOrSecondPerson>' + answerSelection + '</div>';
+    constructingBlock += '<hr class ="divideRace">';
+ 
 }
 /*** END BLOCK GENERATION FUNCTIONS
  ***********************************/
