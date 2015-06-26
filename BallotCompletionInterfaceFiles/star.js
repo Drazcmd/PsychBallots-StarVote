@@ -1145,28 +1145,43 @@ function generatePrintableHTML() {
     
     output += 'hr.divideRace { /* Formatting for the black horizontal line that divides up the races */' +
             ' display: block; font-size: 13.5pt; margin-top: -1.5pt; margin-left: 0pt; margin-bottom: 10pt;' +
-            ' margin-right: 0pt; font-weight: bolder; }\n  h1 { /*Upper left header ("Official Ballot")*/ display:' +
-            ' inline; font-size: 13.5pt; margin-top: 0pt; margin-left: 36pt; margin-bottom: 0pt; margin-right:' +
-            ' 0pt; font-weight: bold; } \n h2 { /*Upper rightt header ("PLACE THIS IN BALLOT BOX")*/ display: inline;' +
+            ' margin-right: 0pt; font-weight: bolder; }\n' +
+            'h1 { /*Upper left header ("Official Ballot")*/ display: inline; font-size: 13.5pt; margin-top: 0pt;' +
+            ' margin-left: 36pt; margin-bottom: 0pt; margin-right: 0pt; font-weight: bold; } \n' +
+            'h2 { /*Upper rightt header ("PLACE THIS IN BALLOT BOX")*/ display: inline;' +
             ' text-align: right; font-size: 17.3pt; margin-top: 0pt; margin-right: 36pt; margin-left: 106pt;' +
-            ' margin-bottom: 0pt; font-weight: bold; } \n divDate { /*Date, just underneath the first (upper left)' +
+            ' margin-bottom: 0pt; font-weight: bold; } \n' +
+            'divDate { /*Date, just underneath the first (upper left)' +
             ' header*/ display:block; font-size: 10.1pt; margin-top: -5pt; margin-left: 36pt; margin-bottom: 0pt;' +
-            ' margin-right: 36pt; font-weight: normal; } \n divLocation { /*Location, just underneath the date*/' +
+            ' margin-right: 36pt; font-weight: normal; } \n' + 
+            ' divLocation { /*Location, just underneath the date*/' +
             ' display: block; font-size: 10.1pt; margin-top: -2.5pt; margin-left: 36pt; margin-bottom: 19pt;' +
-            ' margin-right: 36pt; font-weight: normal; }  \n div.electionOrProposition { /*The name of each election */' +
+            ' margin-right: 36pt; font-weight: normal; }  \n' + 
+            'div.electionOrProposition { /*The name of each election */' +
             ' display:block; font-size: 11pt; margin-top:0pt; margin-left:0pt; margin-bottom: 1.5pt; margin-right:0pt; ' +
-            ' font-weight: bold } \n div.namePlusAND { /* ONLY used for the first person of two total */ display:block;' +
+            ' font-weight: bold } \n' +  
+            'div.namePlusAND { /* ONLY used for the first person of two total */ display:block;' +
             ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight:' +
             ' normal; }  div.onlyOrSecondPerson { /* Used for one person total, or the second of two.' +
             ' THIS ONE IS SPECIAL - it relies on using the width field to work with .party!! */ display: inline-block;' +
             ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight:' +
-            ' normal; width: 82%; }\n  div.party { /* SPECIAL - only used for sticking party on the same line as the' +
-            ' (second, if a team) person being voted for */ display: inline-block; text-align: right; font-weight:bold; ' +
-            ' width: 8%; }\n  divLeftSide { /*SPECIAL - Contains the left side of the page*/ float: left; width: 190pt; ' +
-            ' padding-left: 36pt; }\n  divRightSide { /*SPECIAL - Contains the right side of the page*/ float:' +
-            ' right; width: 190pt; margin-right: 36pt; }\n'
-    
-     
+            ' normal; width: 82%; }\n' + 
+            'div.namePlusAND {/* ONLY used for the first person of two total */ display:block;' +
+            ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight: normal; } \n' +
+            'div.onlyOrSecondPerson { /* Used for one person total, or the second of two. THIS ONE IS SPECIAL - it relies' +
+            ' on using the width field to work with .party!! */ display: inline-block; font-size: 10.5pt; margin-top:0pt;' +
+            ' margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight: normal; width: 82%; }\n' +  
+            'div.party { /* SPECIAL - only used for sticking party on the same line as the (second, if a team) person being voted for */' +
+            ' display: inline-block; font-size: 10.75pt; text-align: right; font-weight:bold; width: 8%; }\n' + 
+            'div.noSelection_outer { /* SPECIAL - only used for highlighting the special "YOU DID NOT SELECT ANYTHING" message */ display: block;' +
+            ' background-color: #D6D7D8; } \n' +  
+            'div.noSelection_inner {/* SPECIAL - only used for the font and positioning of' +
+            ' the special "YOU DID NOT SELECT ANYTHING" message */ font-size: 10.75pt; margin-top:0pt; margin-left:6pt;' +
+            ' margin-bottom: 0pt; margin-right:0pt; font-weight: bold; }\n' + 
+            'divLeftSide {/*SPECIAL - Contains the left side of the' +
+            ' page*/ float: left; width: 190pt; padding-left: 36pt; line-height:15pt; }\n divRightSide {/*SPECIAL -' +
+            ' Contains the right side of the page*/ float: right; width: 190pt; margin-right: 36pt; line-height:15.5pt; }'
+
     output += '</style>\n';
     output += '</head>\n';
 
@@ -1205,6 +1220,9 @@ function generatePrintableHTML() {
 
     //TODO - what's this line doing?
     output += document.getElementById('Results').value;
+
+    //TODO - change the image to be better!
+    output += '<img src="fakeBarcode.jpg" alt="BARCODE GOES HERE" style="width:80px;height:30px;">'
 
     //now just close it up
     output += '</body>\n';
@@ -1414,10 +1432,14 @@ function generateBlock_Race_TwoPersonSelection (blockNumber, chosenCandidate0, c
 }
 
 function generateBlock_NOSELECTION(blockNumber, nameOfRace) {
-    //TODO - the party class should look good, but this needs to be changed later; it's just a stopgap!
+    //TODO - need to divide this so that we get the extra line for unselected two party tickets without relying on the block number like this
     var constructingBlock = '';
     constructingBlock += '<div class="electionOrProposition">' + nameOfRace +  '</div>';
-    constructingBlock += '<div class="party"> YOU_DID_NOT_SELECT_ANYTHING </div>'
+
+    if (blockNumber == 0) { //TODO - later on, when it's more general purpose, this quick hack won't work
+        constructingBlock += '<br>\n' //Since unselected two-person tickets need an extra space in there
+    }
+    constructingBlock += '<div class="noSelection_outer"><div class="noSelection_inner">YOU DID NOT SELECT ANYTHING</div></div>'
     constructingBlock += '<hr class ="divideRace">';
 
     return constructingBlock;

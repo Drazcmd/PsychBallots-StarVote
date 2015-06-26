@@ -1,4 +1,23 @@
-<head>
+<!DOCTYPE html>
+<html>
+    <!-- 
+        Clayton Drazner
+        STAR Vote
+
+        KNOWN ISSUES: 
+        1. An extremely long first or last name can cause issues.
+           Solution: Make sure to limit how big each inputted individual word can be.
+
+        2. If we put in too many elements, it will go on to the next page.
+           This causes problems, since the headers don't show up on the next page.
+           Solution: NOT SURE
+
+        3. How do we position the bar code that's supposed to go at the bottom?
+           Solution: ?
+
+        4. DO NOT USE ' ' FOR ANYTHING! I'm relying on the blueprint to use " " in the console javascript file
+     -->
+    <head>
         <style>
             html * { 
                 /*Set the font for the entire document to Avenir Next*/
@@ -29,6 +48,9 @@
                 1.xdivLeftSide and divRightSide: 2 floating divs I use to split up the left and right side
                 
                 2. Div.party and div.onlyOrSecondPerson: Getting the party name inline to the right of candidate names
+
+                3. Div.noSelection_inner and Div.noSelection_outer: I need this line highlighted in a particular manner, aligned
+                differently than the acutal text of the line; as such I needed to create two divs, with one going inside the other
                 */ 
             }
             
@@ -133,13 +155,13 @@
             }
             
             div.noSelection_outer {
-                /* SPECIAL - only used for highlighting the special 'YOU DID NOT SELECT ANYTHING' message */
+                /* SPECIAL - only used for highlighting the special "YOU DID NOT SELECT ANYTHING" message */
                 display: block;
                 background-color: #D6D7D8; 
             }
 
             div.noSelection_inner {
-                /* SPECIAL - only used for the font and positioning of the special 'YOU DID NOT SELECT ANYTHING' message */
+                /* SPECIAL - only used for the font and positioning of the special "YOU DID NOT SELECT ANYTHING" message */
                 font-size: 10.75pt;
                 margin-top:0pt;
                 margin-left:6pt;  
@@ -305,5 +327,6 @@
             <div class="onlyOrSecondPerson">No</div>
             <hr class ="divideRace">
         </divRightSide>
+
     </body>
 </html>
