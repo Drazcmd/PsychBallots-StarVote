@@ -105,11 +105,20 @@ function start(){
         console.log(qxml.getElementsByTagName("race"));
         console.log("This is the current race entry in the xml races field -> ");
         console.log(currentRace);
-        console.log("no idea what this is -> " + currentRace.getElementsByTagName("number")[0].firstChild.nodeValue);
+        console.log("This is the 'number' tag of the current race entry in the xml races field -> ");
+        console.log(currentRace.getElementsByTagName("number"));
+        console.log("This is the 0th index of the 'number' tag of the current race entry in the xml races field -> ");
+        console.log(currentRace.getElementsByTagName("number")[0]);
+        console.log("This is the .firstChild of the 0th index of the 'number' tag of the current race entry in the xml races field -> ");
+        console.log(currentRace.getElementsByTagName("number")[0].firstChild);
+        //console.log("This is the .nodeValue of the .firstChild of the 0th index of the stuff from above -> ");
+        //console.log(currentRace.getElementsByTagName("number")[0].firstChild.nodeValue);
+
         races1[j].title = currentRace.getElementsByTagName("title")[0].firstChild.nodeValue;
         races1[j].number = currentRace.getElementsByTagName("number")[0].firstChild.nodeValue;
         races1[j].cand = currentRace.getElementsByTagName("candidate");
 
+        console.log("this is what is stuffed into the races1 array at the variable j in the start function" + races1[j].title + races1[j].number + races[j].cand);
 
         races1[j].candidates = [];
         for (var i=0;i<races1[j].cand.length;i++) {
