@@ -1191,7 +1191,7 @@ function generatePrintableHTML() {
 
     //TODO - format this better (leaving as is for now since it doesn't affect output. See exapmle CSS page for details)
     output += '<h1>Official Ballot</h1> <h2>PLACE THIS IN BALLOT BOX</h2>\n';
-    ourpur += '<divDate>November 8, 2016, General Election</divDate> <divLocation>Harris County, Texas Precint 101A</divLocation>\n';
+    output += '<divDate>November 8, 2016, General Election</divDate> <divLocation>Harris County, Texas Precint 101A</divLocation>\n';
 
     //now formatting the races on the left side of the printout page
     output += '<divLeftSide>\n';
