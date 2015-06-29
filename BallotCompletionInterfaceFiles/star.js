@@ -1190,7 +1190,8 @@ function generatePrintableHTML() {
     output += '<body>\n';
 
     //TODO - format this better (leaving as is for now since it doesn't affect output. See exapmle CSS page for details)
-    output += '<h1>Official Ballot</h1> <h2>PLACE THIS IN BALLOT BOX</h2>  <divDate>November 8, 2016, General Election</divDate> <divLocation>Harris County, Texas Precint 101A</divLocation>\n';
+    output += '<h1>Official Ballot</h1> <h2>PLACE THIS IN BALLOT BOX</h2>\n';
+    ourpur += '<divDate>November 8, 2016, General Election</divDate> <divLocation>Harris County, Texas Precint 101A</divLocation>\n';
 
     //now formatting the races on the left side of the printout page
     output += '<divLeftSide>\n';
@@ -1222,7 +1223,7 @@ function generatePrintableHTML() {
     output += document.getElementById('Results').value;
 
     //TODO - change the image to be better!
-    output += '<img src="fakeBarcode.jpg" alt="BARCODE GOES HERE" style="width:80px;height:30px;">'
+    output += '<img src="fakeBarcode.jpg" alt="BARCODE GOES HERE" style="width:350px;height:35px;">'
 
     //now just close it up
     output += '</body>\n';
