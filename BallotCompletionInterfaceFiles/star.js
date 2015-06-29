@@ -1266,6 +1266,7 @@ function handleOneBlockHTML(blockNumber) {
         if (blockNumber != 0 || nameOfRace != "President and Vice President") {
             console.log("\nAs of now, only the Presidential election can have two candidates\n");
             var errorString = "ERROR IN TWO PERSON SELECTION!!!!!! nameOfRace is " + nameOfRace + "and blockNumber is " + 0 + " ; one of these is wrong!";
+            console.log('\n\n\n\n\n' + errorString + '\n\n\n\n\n');
             return errorString;
         }
     }
@@ -1295,12 +1296,12 @@ function handleOneBlockHTML(blockNumber) {
         if (twoPersonSelection == true) {
             if (nameOfRace == "President and Vice President") {
                 var helperArray = chosenTicket.split(" and ", 2);
-                console.log("\n\n\n\n testing - these should be two names!->   " +  helperArray[0] + helperArray[1] + "from this array ->   " + helperArray);
+                //console.log("\n\n\n\n testing - these should be two names!->   " +  helperArray[0] + helperArray[1] + "from this array ->   " + helperArray);
                 return generateBlock_Race_TwoPersonSelection(blockNumber, helperArray[0], helperArray[1], chosenTicketParty, nameOfRace);
             } 
             else {
-                console.log("\nAs of now, only the Presidential election can have two candidates\n");
-                return "ERROR IN TWO PERSON SELECTION!!!!!! nameOfRace is " + nameOfRace + "instead of President And Vice President";
+                //As of now, only the Presidential election can have two candidates\n");
+                throw("ERROR IN TWO PERSON SELECTION! nameOfRace is " + nameOfRace + "instead of President And Vice President");
             }
         }
 
@@ -1309,16 +1310,15 @@ function handleOneBlockHTML(blockNumber) {
         }
 
         else {
-            console.log("\nThis is not good! Something weird with our HTML. And/or boolean logic\n")
-            //should NEVER execute this block (if here, 'YOU DUN GOOFED')
-            //TODO - figure out what to do in bizarre screwup bug situations. Throw an execption?
+            throw('SERIOUS ERROR_a')
+            //should NEVER execute this block
 
         }
     }
 
     else {
-        console.log("\nThis is not good! Something weird with our HTML; that or we broke logic\n")
-        //TODO - figure out what to do in bizarre screwup bug situations. Throw an execption?
+        throw('SERIOUS ERROR_b');
+        //should NEVER execute this block either
     }
 
 }
