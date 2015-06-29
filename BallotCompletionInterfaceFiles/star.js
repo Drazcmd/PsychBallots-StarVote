@@ -1310,15 +1310,13 @@ function handleOneBlockHTML(blockNumber) {
         }
 
         else {
-            throw('SERIOUS ERROR_a')
-            //should NEVER execute this block
+            throw('ERROR - twoPersonSelection is netiher true nor false')
 
         }
     }
 
     else {
-        throw('SERIOUS ERROR_b');
-        //should NEVER execute this block either
+        throw('ERROR - selection is neither true nor false');
     }
 
 }
