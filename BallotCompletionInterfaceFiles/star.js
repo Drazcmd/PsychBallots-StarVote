@@ -1311,7 +1311,6 @@ function handleOneBlockHTML(blockNumber) {
 
         else {
             throw('ERROR - twoPersonSelection is netiher true nor false')
-
         }
     }
 
