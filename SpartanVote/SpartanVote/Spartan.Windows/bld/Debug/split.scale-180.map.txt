@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-180"
+"ResourceDimensions"		"scale-180"
+
+[Files]
+"C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\split.scale-180.pri"			"resources.pri"
+"C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\PackageLayout\images\SplashScreen_620.scale-180.png"			"images\SplashScreen_620.scale-180.png"

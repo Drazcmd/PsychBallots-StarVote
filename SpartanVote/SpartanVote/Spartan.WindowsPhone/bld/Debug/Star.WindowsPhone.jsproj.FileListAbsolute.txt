@@ -1,0 +1,30 @@
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bin\Debug\ReverseMap\resources.pri
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bin\Debug\AppxManifest.xml
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bin\Debug\Star.WindowsPhone.build.appxrecipe
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\priconfig.xml
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\priconfig.xml.intermediate
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\layout.resfiles
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\layout.resfiles.intermediate
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\resources.resfiles
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\resources.resfiles.intermediate
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\pri.resfiles
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\pri.resfiles.intermediate
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\qualifiers.txt
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\qualifiers.txt.intermediate
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\t-mattbe\Documents\Visual Studio 2013\Projects\Star\Star\Star.WindowsPhone\bld\Debug\ProjectArchitectures.txt
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bin\Debug\ReverseMap\resources.pri
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bin\Debug\AppxManifest.xml
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bin\Debug\Star.WindowsPhone.build.appxrecipe
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\priconfig.xml
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\priconfig.xml.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\layout.resfiles
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\layout.resfiles.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\resources.resfiles
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\resources.resfiles.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\pri.resfiles
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\pri.resfiles.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\qualifiers.txt
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\qualifiers.txt.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.WindowsPhone\bld\Debug\ProjectArchitectures.txt

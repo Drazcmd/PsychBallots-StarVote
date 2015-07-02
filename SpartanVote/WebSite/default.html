@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>STAR-Vote Ballot</title>
+    <link href="/css/spartan.css" rel="stylesheet" type="text/css">
+    <script src="/js/spartan.js"></script>
+    <script language="VBScript">
+        sub Print()
+            OLECMDID_PRINT = 6
+            OLECMDEXECOPT_DONTPROMPTUSER = 2
+            OLECMDEXECOPT_PROMPTUSER = 1
+            call WB.ExecWB(OLECMDID_PRINT, OLECMDEXECOPT_DONTPROMPTUSER,1)
+        End Sub
+        document.write "<object id='WB' width='0' height='0' classid='CLSID:8856F961-340A-11D0-A96B-00C04FD705A2'></object>"
+    </script>
+
+
+
+
+</head>
+
+<body onload="connect()">
+
+<div id="Container">
+
+    <div id="header"></div>
+
+    <div id="Content">
+
+        <!-- Election Information -->
+        <div id="info" style="visibility: visible">
+            <h1>
+                <p>Microsoft Research</p>
+                <strong>Faculty Summit 2015</strong>
+            </h1>
+            <p> Research Showcase Questionnaire</p>
+            <p>July 9, 2015</p>
+            <br>
+            <button id="button_begin" type="button" onclick="gotoFirstInstructions()">
+                Begin Voting
+            </button>
+        </div> <!--info-->
+        <!--How to complete ballot -->
+        <div id="first_instructions" style="visibility: hidden">
+            <h1>
+                <strong>How to vote</strong>
+            </h1>
+            <p>
+                <strong>To vote for your favorite areas and demos,</strong>
+                touch the name of the area or demo. The box will turn blue.
+            </p>
+        </div><!--first_instructions-->
+        <!-- Ballot completion -->
+        <div id="VotingContentDIV" style="visibility: hidden" class="votingInstructions">
+            <!-- <p id="votinginstructions" align="left">Vote for 1.</p> <br><br> -->
+            <!--<div id="grid"> Can remove if votingcontentDiv takes over-->
+
+            <div id="titles">
+                <div id="raceTitle">Race Title</div><br>
+                <div id="voteText"> Choose yes or no. </div> <br>
+                <div id="voteFor">Vote for up to 1.</div>
+            </div>
+
+            <div id="races"> <!--This will be filled in programmatically--></div>
+
+            <!--<button type="button" id="clearSelection" onClick="Clear()">Clear your selection</button>-->
+            <!--</div> grid-->
+        </div> <!--VotingContentDIV-->
+        <!--Review-->
+        <div id="reviews" style="visibility: hidden">
+
+            <div id="reviewTop" style="visibility: hidden">
+                <p id="reviewHeader">
+                    <strong>Review what you're voting for</strong>
+                </p>
+                <p id="reviewInstructions"> <strong>This screen shows everything you voted for.</strong> Review it carefully. If you are ready to cast your ballot, touch <strong>Cast your ballot.</strong>
+                </p>
+            </div> <!--reviewTop-->
+
+        </div> <!--reviews-->
+        <!-- Are you finished?-->
+        <div id="submitScreen" style="visibility: hidden">
+            <p id="submitHeading">
+                <strong> Are you finished?</strong>
+            </p>
+            <p id="submitText">
+                If you want to make changes, touch the <strong>Return to ballot</strong> button.<br><br>
+                If you are ready to cast your ballot, touch the <strong>Cast</strong> button.
+            </p>
+            <div id="submitScreenBtns">
+                <button id="returnToBallot" type="button" onclick="recordEvent(review); goToReview();"> Return to ballot </button>
+                <button id="endVoting" type="button" onclick="recordEvent(endoftask); finish();">Cast your ballot</button>
+            </div><!--submitScreenBtns-->
+        </div><!--submitScreen-->
+        <!--Confirmation Screen-->
+        <div id="confirmation" style="visibility: hidden">
+            <p id="confHeading">
+                <strong> Thank you for completing this questionnare!</strong>
+            </p>
+        </div>
+
+        <iframe id="printout" name="printout" style="display: none"></iframe>
+
+    </div> <!-- Content -->
+    <!--Bottom Content-->
+    <div id="footer">
+        <div id="Bottom" class="container_hf">
+            <!--container_hf keeps buttons
+            from spreading across bottom footer bar-->
+            <!-- Buttons -->
+            <!--Buttons on Instruction Screen -->
+            <button id="Back" type="button" onclick="gotoInfo()" style="visibility: hidden">
+                Back
+            </button><!--Takes voter back to how to vote screen-->
+            <button id="Begin" type="button" onclick="recordEvent(begin);next(0);" style="visibility: hidden">
+                Next
+            </button> <!--Begins ballot completion loop, but next in total voting process-->
+
+            <!--Buttons and progress element used in ballot completion section -->
+            <button id="Previous" type="button" onclick="recordEvent(previous);nav(0);" style="visibility: hidden">
+                Back
+            </button>
+
+            <div id="progress"></div> <!--Ballot Completion Progress: XX of 27-->
+
+            <button id="Next" type="button" class="next" onclick="recordEvent(nextLabel);nav(1);" style="visibility: hidden">Next</button>
+
+
+            <button id="Review" type="button" onclick="recordEvent(review);recordReviewChange(rIndex);" style="visibility: hidden">
+                Return to Review<br>
+            </button>
+
+            <object id="WebBrowser1" width="0" height="0" classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2"> </object>
+            <button id="confirm" type="button" onclick="Print()" style="visibility: hidden">Cast your ballot</button>
+            
+
+        </div> <!-- Bottom -->
+    </div><!-- Footer -->
+    <!--Form for collecting data/emailing it to me-->
+    <form id="f1" method="POST" action="http://localhost:8080/test">
+        <input id="submit" type="submit" value="Cast ballot"
+               onclick="recordEvent(submitBallot);f1.submit();" style="visibility: hidden">
+
+        <textarea id="voteLog" style="visibility: hidden" name="voteData"></textarea>
+        <textarea id="eventLog" style="visibility: hidden" name="eventData"></textarea>
+        <textarea id="Results" style="visibility: hidden" name="results"></textarea>
+        <textarea id="IDArea" style="visibility: hidden" name="subID"></textarea>
+
+        <input name="subject" type="hidden" value="$subID">
+
+        <input name="outform" type="hidden" value="$voteData" style="visibility: hidden">
+        <input name="outform1" value="$eventData" style="visibility: hidden">
+        <input name="outform2" value="$results" style="visibility: hidden">
+        <input name="outform3" value="$subID" style="visibility: hidden">
+    </form>
+
+</div><!--container -->
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bin\Debug\ReverseMap\resources.pri
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bin\Debug\AppxManifest.xml
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bin\Debug\Star.Windows.build.appxrecipe
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\priconfig.xml
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\priconfig.xml.intermediate
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\layout.resfiles
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\layout.resfiles.intermediate
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\resources.resfiles
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\resources.resfiles.intermediate
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\pri.resfiles
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\pri.resfiles.intermediate
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\qualifiers.txt
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\qualifiers.txt.intermediate
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\t-mattbe\documents\visual studio 2013\Projects\Star\Star\Star.Windows\bld\Debug\ProjectArchitectures.txt
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\ReverseMap\resources.pri
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\AppxManifest.xml
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\Star.Windows.build.appxrecipe
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\priconfig.xml
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\priconfig.xml.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\layout.resfiles
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\layout.resfiles.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\resources.resfiles
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\resources.resfiles.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\pri.resfiles
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\pri.resfiles.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\qualifiers.txt
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\qualifiers.txt.intermediate
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\ProjectArchitectures.txt
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\PrinterComponent.winmd
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\PrinterComponent.pdb
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\PrinterComponent.pri
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\Star.Windows.jsprojResolveAssemblyReference.cache

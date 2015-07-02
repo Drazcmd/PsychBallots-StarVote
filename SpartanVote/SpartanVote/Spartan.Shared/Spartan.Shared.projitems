@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>cca6a6f3-5bff-4c86-8214-441c2baf4dde</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bold.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bold.svg" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bold.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bold.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bolditalic.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bolditalic.svg" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bolditalic.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-bolditalic.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-italic.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-italic.svg" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-italic.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-italic.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-regular.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-regular.svg" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-regular.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\avenirnextltpro-regular.woff" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd-Black.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd-Black.svg" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd-Black.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd-Bold.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd-Bold.svg" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd-Bold.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd.eot" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd.svg" />
+    <Content Include="$(MSBuildThisFileDirectory)fonts\UniversLTStd.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)images\app-icon.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\app-icon_150.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\app-icon_30.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\app-icon_50.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\app-icon_60.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\app-icon_90.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\check_notSelected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\check_selected copy-01.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\check_selected copy.ai" />
+    <Content Include="$(MSBuildThisFileDirectory)images\check_selected copy.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\check_selected.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\clearSelection.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\FacSumHeader.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)images\loading.gif" />
+    <Content Include="$(MSBuildThisFileDirectory)images\next.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\old.sprite-voting.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\old.static-info.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\previous.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\smalllogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\sprite-button.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\sprite-pad.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\sprite-voting.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\static-check.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\static-info.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\static-instructions.png" />
+    <Content Include="$(MSBuildThisFileDirectory)images\StoreLogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)js\default.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\spartan.js" />
+    <Content Include="$(MSBuildThisFileDirectory)rsrc\election - Copy.xml" />
+    <Content Include="$(MSBuildThisFileDirectory)rsrc\election.xml" />
+  </ItemGroup>
+</Project>

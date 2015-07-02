@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="6b89998d-7b84-4dc1-9958-b13038782ddc" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="default - Copy.html" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/default%20-%20Copy.html">
+				<Candidate type="Path">
+					<Value>default - Copy.html</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="default.html" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/default.html">
+				<Candidate type="Path">
+					<Value>default.html</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="print.html" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/print.html">
+				<Candidate type="Path">
+					<Value>print.html</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SplashScreen.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/SplashScreen.png">
+				<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+					<Value>SplashScreen.scale-100.png</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="css">
+				<NamedResource name="default.css" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/default.css">
+					<Candidate type="Path">
+						<Value>css\default.css</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="spartan.css" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/spartan.css">
+					<Candidate type="Path">
+						<Value>css\spartan.css</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="fonts">
+					<NamedResource name="avenirnextltpro-bold.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bold.eot">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bold.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-bold.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bold.svg">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bold.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-bold.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bold.ttf">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bold.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-bold.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bold.woff">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bold.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-bolditalic.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bolditalic.eot">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bolditalic.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-bolditalic.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bolditalic.svg">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bolditalic.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-bolditalic.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bolditalic.ttf">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bolditalic.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-bolditalic.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-bolditalic.woff">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-bolditalic.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-italic.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-italic.eot">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-italic.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-italic.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-italic.svg">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-italic.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-italic.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-italic.ttf">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-italic.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-italic.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-italic.woff">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-italic.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-regular.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-regular.eot">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-regular.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-regular.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-regular.svg">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-regular.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-regular.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-regular.ttf">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-regular.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="avenirnextltpro-regular.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/avenirnextltpro-regular.woff">
+						<Candidate type="Path">
+							<Value>css\fonts\avenirnextltpro-regular.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd-Black.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd-Black.eot">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd-Black.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd-Black.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd-Black.svg">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd-Black.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd-Black.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd-Black.ttf">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd-Black.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd-Bold.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd-Bold.eot">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd-Bold.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd-Bold.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd-Bold.svg">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd-Bold.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd-Bold.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd-Bold.ttf">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd-Bold.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd.eot">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd.svg">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="UniversLTStd.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/fonts/UniversLTStd.ttf">
+						<Candidate type="Path">
+							<Value>css\fonts\UniversLTStd.ttf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="images">
+					<NamedResource name="app-icon.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/app-icon.png">
+						<Candidate type="Path">
+							<Value>css\images\app-icon.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="app-icon_60.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/app-icon_60.png">
+						<Candidate type="Path">
+							<Value>css\images\app-icon_60.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="check_notSelected.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/check_notSelected.png">
+						<Candidate type="Path">
+							<Value>css\images\check_notSelected.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="check_selected copy-01.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/check_selected%20copy-01.png">
+						<Candidate type="Path">
+							<Value>css\images\check_selected copy-01.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="check_selected copy.ai" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/check_selected%20copy.ai">
+						<Candidate type="Path">
+							<Value>css\images\check_selected copy.ai</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="check_selected copy.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/check_selected%20copy.png">
+						<Candidate type="Path">
+							<Value>css\images\check_selected copy.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="check_selected.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/check_selected.png">
+						<Candidate type="Path">
+							<Value>css\images\check_selected.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="clearSelection.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/clearSelection.png">
+						<Candidate type="Path">
+							<Value>css\images\clearSelection.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="FacSumHeader.jpg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/FacSumHeader.jpg">
+						<Candidate type="Path">
+							<Value>css\images\FacSumHeader.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="loading.gif" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/loading.gif">
+						<Candidate type="Path">
+							<Value>css\images\loading.gif</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="next.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/next.png">
+						<Candidate type="Path">
+							<Value>css\images\next.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="old.sprite-voting.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/old.sprite-voting.png">
+						<Candidate type="Path">
+							<Value>css\images\old.sprite-voting.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="old.static-info.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/old.static-info.png">
+						<Candidate type="Path">
+							<Value>css\images\old.static-info.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="previous.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/previous.png">
+						<Candidate type="Path">
+							<Value>css\images\previous.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="smalllogo.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/smalllogo.png">
+						<Candidate type="Path">
+							<Value>css\images\smalllogo.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="splashscreen.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/splashscreen.png">
+						<Candidate type="Path">
+							<Value>css\images\splashscreen.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="sprite-button.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/sprite-button.png">
+						<Candidate type="Path">
+							<Value>css\images\sprite-button.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="sprite-pad.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/sprite-pad.png">
+						<Candidate type="Path">
+							<Value>css\images\sprite-pad.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="sprite-voting.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/sprite-voting.png">
+						<Candidate type="Path">
+							<Value>css\images\sprite-voting.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="static-check.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/static-check.png">
+						<Candidate type="Path">
+							<Value>css\images\static-check.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="static-info.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/static-info.png">
+						<Candidate type="Path">
+							<Value>css\images\static-info.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="static-instructions.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/static-instructions.png">
+						<Candidate type="Path">
+							<Value>css\images\static-instructions.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="storelogo.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/css/images/storelogo.png">
+						<Candidate type="Path">
+							<Value>css\images\storelogo.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="fonts">
+				<NamedResource name="avenirnextltpro-bold.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bold.eot">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bold.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-bold.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bold.svg">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bold.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-bold.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bold.ttf">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bold.ttf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-bold.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bold.woff">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bold.woff</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-bolditalic.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bolditalic.eot">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bolditalic.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-bolditalic.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bolditalic.svg">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bolditalic.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-bolditalic.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bolditalic.ttf">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bolditalic.ttf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-bolditalic.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-bolditalic.woff">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-bolditalic.woff</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-italic.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-italic.eot">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-italic.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-italic.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-italic.svg">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-italic.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-italic.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-italic.ttf">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-italic.ttf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-italic.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-italic.woff">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-italic.woff</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-regular.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-regular.eot">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-regular.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-regular.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-regular.svg">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-regular.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-regular.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-regular.ttf">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-regular.ttf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="avenirnextltpro-regular.woff" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/avenirnextltpro-regular.woff">
+					<Candidate type="Path">
+						<Value>fonts\avenirnextltpro-regular.woff</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd-Black.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd-Black.eot">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd-Black.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd-Black.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd-Black.svg">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd-Black.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd-Black.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd-Black.ttf">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd-Black.ttf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd-Bold.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd-Bold.eot">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd-Bold.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd-Bold.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd-Bold.svg">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd-Bold.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd-Bold.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd-Bold.ttf">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd-Bold.ttf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd.eot" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd.eot">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd.eot</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd.svg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd.svg">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd.svg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UniversLTStd.ttf" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/fonts/UniversLTStd.ttf">
+					<Candidate type="Path">
+						<Value>fonts\UniversLTStd.ttf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="app-icon.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon.png">
+					<Candidate type="Path">
+						<Value>images\app-icon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="app-icon_100.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_100.png">
+					<Candidate type="Path">
+						<Value>images\app-icon_100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="app-icon_150.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_150.png">
+					<Candidate type="Path">
+						<Value>images\app-icon_150.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="app-icon_30.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_30.png">
+					<Candidate type="Path">
+						<Value>images\app-icon_30.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="app-icon_50.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_50.png">
+					<Candidate type="Path">
+						<Value>images\app-icon_50.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="app-icon_60.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_60.png">
+					<Candidate type="Path">
+						<Value>images\app-icon_60.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="app-icon_90.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_90.png">
+					<Candidate type="Path">
+						<Value>images\app-icon_90.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="check_notSelected.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/check_notSelected.png">
+					<Candidate type="Path">
+						<Value>images\check_notSelected.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="check_selected copy-01.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/check_selected%20copy-01.png">
+					<Candidate type="Path">
+						<Value>images\check_selected copy-01.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="check_selected copy.ai" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/check_selected%20copy.ai">
+					<Candidate type="Path">
+						<Value>images\check_selected copy.ai</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="check_selected copy.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/check_selected%20copy.png">
+					<Candidate type="Path">
+						<Value>images\check_selected copy.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="check_selected.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/check_selected.png">
+					<Candidate type="Path">
+						<Value>images\check_selected.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="clearSelection.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/clearSelection.png">
+					<Candidate type="Path">
+						<Value>images\clearSelection.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FacSumHeader.jpg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/FacSumHeader.jpg">
+					<Candidate type="Path">
+						<Value>images\FacSumHeader.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="loading.gif" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/loading.gif">
+					<Candidate type="Path">
+						<Value>images\loading.gif</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/logo.png">
+					<Candidate type="Path">
+						<Value>images\logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="next.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/next.png">
+					<Candidate type="Path">
+						<Value>images\next.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="old.sprite-voting.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/old.sprite-voting.png">
+					<Candidate type="Path">
+						<Value>images\old.sprite-voting.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="old.static-info.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/old.static-info.png">
+					<Candidate type="Path">
+						<Value>images\old.static-info.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="previous.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/previous.png">
+					<Candidate type="Path">
+						<Value>images\previous.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="smalllogo.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/smalllogo.png">
+					<Candidate type="Path">
+						<Value>images\smalllogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen_620.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/SplashScreen_620.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\SplashScreen_620.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sprite-button.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/sprite-button.png">
+					<Candidate type="Path">
+						<Value>images\sprite-button.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sprite-pad.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/sprite-pad.png">
+					<Candidate type="Path">
+						<Value>images\sprite-pad.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sprite-voting.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/sprite-voting.png">
+					<Candidate type="Path">
+						<Value>images\sprite-voting.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="static-check.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/static-check.png">
+					<Candidate type="Path">
+						<Value>images\static-check.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="static-info.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/static-info.png">
+					<Candidate type="Path">
+						<Value>images\static-info.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="static-instructions.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/static-instructions.png">
+					<Candidate type="Path">
+						<Value>images\static-instructions.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="js">
+				<NamedResource name="default.js" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/js/default.js">
+					<Candidate type="Path">
+						<Value>js\default.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="spartan.js" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/js/spartan.js">
+					<Candidate type="Path">
+						<Value>js\spartan.js</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="rsrc">
+				<NamedResource name="election - Copy.xml" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/rsrc/election%20-%20Copy.xml">
+					<Candidate type="Path">
+						<Value>rsrc\election - Copy.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="election.xml" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/rsrc/election.xml">
+					<Candidate type="Path">
+						<Value>rsrc\election.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

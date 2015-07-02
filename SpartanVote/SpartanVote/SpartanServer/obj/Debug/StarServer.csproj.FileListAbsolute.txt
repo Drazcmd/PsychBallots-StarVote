@@ -1,0 +1,12 @@
+c:\users\t-mattbe\documents\visual studio 2013\Projects\StarServer\StarServer\bin\Debug\StarServer.exe.config
+c:\users\t-mattbe\documents\visual studio 2013\Projects\StarServer\StarServer\bin\Debug\StarServer.exe
+c:\users\t-mattbe\documents\visual studio 2013\Projects\StarServer\StarServer\bin\Debug\StarServer.pdb
+c:\users\t-mattbe\documents\visual studio 2013\Projects\StarServer\StarServer\obj\Debug\StarServer.csprojResolveAssemblyReference.cache
+c:\users\t-mattbe\documents\visual studio 2013\Projects\StarServer\StarServer\obj\Debug\StarServer.exe
+c:\users\t-mattbe\documents\visual studio 2013\Projects\StarServer\StarServer\obj\Debug\StarServer.pdb
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\StarServer\bin\Debug\StarServer.exe.config
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\StarServer\bin\Debug\StarServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\StarServer\bin\Debug\StarServer.pdb
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\StarServer\obj\Debug\StarServer.csprojResolveAssemblyReference.cache
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\StarServer\obj\Debug\StarServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\Star\Star\StarServer\obj\Debug\StarServer.pdb

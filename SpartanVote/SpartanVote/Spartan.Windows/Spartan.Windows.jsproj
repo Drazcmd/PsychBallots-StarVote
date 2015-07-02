@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>6b89998d-7b84-4dc1-9958-b13038782ddc</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>Star_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\fonts\avenirnextltpro-bold.eot" />
+    <Content Include="css\fonts\avenirnextltpro-bold.svg" />
+    <Content Include="css\fonts\avenirnextltpro-bold.ttf" />
+    <Content Include="css\fonts\avenirnextltpro-bold.woff" />
+    <Content Include="css\fonts\avenirnextltpro-bolditalic.eot" />
+    <Content Include="css\fonts\avenirnextltpro-bolditalic.svg" />
+    <Content Include="css\fonts\avenirnextltpro-bolditalic.ttf" />
+    <Content Include="css\fonts\avenirnextltpro-bolditalic.woff" />
+    <Content Include="css\fonts\avenirnextltpro-italic.eot" />
+    <Content Include="css\fonts\avenirnextltpro-italic.svg" />
+    <Content Include="css\fonts\avenirnextltpro-italic.ttf" />
+    <Content Include="css\fonts\avenirnextltpro-italic.woff" />
+    <Content Include="css\fonts\avenirnextltpro-regular.eot" />
+    <Content Include="css\fonts\avenirnextltpro-regular.svg" />
+    <Content Include="css\fonts\avenirnextltpro-regular.ttf" />
+    <Content Include="css\fonts\avenirnextltpro-regular.woff" />
+    <Content Include="css\fonts\UniversLTStd-Black.eot" />
+    <Content Include="css\fonts\UniversLTStd-Black.svg" />
+    <Content Include="css\fonts\UniversLTStd-Black.ttf" />
+    <Content Include="css\fonts\UniversLTStd-Bold.eot" />
+    <Content Include="css\fonts\UniversLTStd-Bold.svg" />
+    <Content Include="css\fonts\UniversLTStd-Bold.ttf" />
+    <Content Include="css\fonts\UniversLTStd.eot" />
+    <Content Include="css\fonts\UniversLTStd.svg" />
+    <Content Include="css\fonts\UniversLTStd.ttf" />
+    <Content Include="css\images\app-icon.png" />
+    <Content Include="css\images\app-icon_60.png" />
+    <Content Include="css\images\check_notSelected.png" />
+    <Content Include="css\images\check_selected copy-01.png" />
+    <Content Include="css\images\check_selected copy.ai" />
+    <Content Include="css\images\check_selected copy.png" />
+    <Content Include="css\images\check_selected.png" />
+    <Content Include="css\images\clearSelection.png" />
+    <Content Include="css\images\FacSumHeader.jpg" />
+    <Content Include="css\images\loading.gif" />
+    <Content Include="css\images\next.png" />
+    <Content Include="css\images\old.sprite-voting.png" />
+    <Content Include="css\images\old.static-info.png" />
+    <Content Include="css\images\previous.png" />
+    <Content Include="css\images\smalllogo.png" />
+    <Content Include="css\images\splashscreen.png" />
+    <Content Include="css\images\sprite-button.png" />
+    <Content Include="css\images\sprite-pad.png" />
+    <Content Include="css\images\sprite-voting.png" />
+    <Content Include="css\images\static-check.png" />
+    <Content Include="css\images\static-info.png" />
+    <Content Include="css\images\static-instructions.png" />
+    <Content Include="css\images\storelogo.png" />
+    <Content Include="css\spartan.css" />
+    <Content Include="default - Copy.html" />
+    <Content Include="default.html" />
+    <Content Include="fonts\avenirnextltpro-bold.eot" />
+    <Content Include="fonts\avenirnextltpro-bold.svg" />
+    <Content Include="fonts\avenirnextltpro-bold.ttf" />
+    <Content Include="fonts\avenirnextltpro-bold.woff" />
+    <Content Include="fonts\avenirnextltpro-bolditalic.eot" />
+    <Content Include="fonts\avenirnextltpro-bolditalic.svg" />
+    <Content Include="fonts\avenirnextltpro-bolditalic.ttf" />
+    <Content Include="fonts\avenirnextltpro-bolditalic.woff" />
+    <Content Include="fonts\avenirnextltpro-italic.eot" />
+    <Content Include="fonts\avenirnextltpro-italic.svg" />
+    <Content Include="fonts\avenirnextltpro-italic.ttf" />
+    <Content Include="fonts\avenirnextltpro-italic.woff" />
+    <Content Include="fonts\avenirnextltpro-regular.eot" />
+    <Content Include="fonts\avenirnextltpro-regular.svg" />
+    <Content Include="fonts\avenirnextltpro-regular.ttf" />
+    <Content Include="fonts\avenirnextltpro-regular.woff" />
+    <Content Include="fonts\UniversLTStd-Black.eot" />
+    <Content Include="fonts\UniversLTStd-Black.svg" />
+    <Content Include="fonts\UniversLTStd-Black.ttf" />
+    <Content Include="fonts\UniversLTStd-Bold.eot" />
+    <Content Include="fonts\UniversLTStd-Bold.svg" />
+    <Content Include="fonts\UniversLTStd-Bold.ttf" />
+    <Content Include="fonts\UniversLTStd.eot" />
+    <Content Include="fonts\UniversLTStd.svg" />
+    <Content Include="fonts\UniversLTStd.ttf" />
+    <Content Include="images\app-icon_100.png" />
+    <Content Include="images\app-icon_60.png" />
+    <Content Include="images\check_notSelected.png" />
+    <Content Include="images\check_selected copy-01.png" />
+    <Content Include="images\check_selected copy.ai" />
+    <Content Include="images\check_selected copy.png" />
+    <Content Include="images\check_selected.png" />
+    <Content Include="images\clearSelection.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\old.sprite-voting.png" />
+    <Content Include="images\old.static-info.png" />
+    <Content Include="images\previous.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\SplashScreen_620.scale-100.png" />
+    <Content Include="images\SplashScreen_620.scale-180.png" />
+    <Content Include="images\sprite-button.png" />
+    <Content Include="images\sprite-pad.png" />
+    <Content Include="images\sprite-voting.png" />
+    <Content Include="images\static-check.png" />
+    <Content Include="images\static-info.png" />
+    <Content Include="images\static-instructions.png" />
+    <Content Include="css\default.css" />
+    <Content Include="js\default.js" />
+    <Content Include="js\spartan.js" />
+    <Content Include="print.html" />
+    <Content Include="rsrc\election - Copy.xml" />
+    <Content Include="rsrc\election.xml" />
+    <Content Include="SplashScreen.scale-100.png" />
+    <None Include="Star_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.2.0, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PrinterComponent\PrinterComponent.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

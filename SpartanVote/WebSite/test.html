@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Test</title>
+    <script language="jscript">
+        var http = new XMLHttpRequest();
+        var url = "http://localhost:8080/print";
+        
+        html = "<html><body>Hello world!</body></html>";
+
+        http.open("POST", url, true);
+
+        //Send the proper header information along with the request
+        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        http.setRequestHeader("Content-length", html.length);
+        http.setRequestHeader("Connection", "close");
+
+
+
+        http.onreadystatechange = function () {//Call a function when the state changes.
+            if (http.status === 200) {
+                console.log(http.responseText);
+            } else if (http.readyState === 4) {
+                alert("Danger Will Robinson!");
+               
+            }
+
+        }
+
+
+        http.send(html);
+
+    </script>
+</head>
+<body>
+    Do stuff!
+</body>
+</html>

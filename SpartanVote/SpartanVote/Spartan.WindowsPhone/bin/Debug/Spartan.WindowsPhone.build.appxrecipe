@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MININT-ELKSI5L</Machine>
+    <WindowsUser>t-mattbe</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>947916d6-f4d2-45dd-9fad-b9cdb8e54a30</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\images\SplashScreen.scale-240.png">
+      <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\app-icon.png">
+      <PackagePath>images\app-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\app-icon_150.png">
+      <PackagePath>images\app-icon_150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\app-icon_30.png">
+      <PackagePath>images\app-icon_30.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\app-icon_50.png">
+      <PackagePath>images\app-icon_50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\app-icon_60.png">
+      <PackagePath>images\app-icon_60.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\app-icon_90.png">
+      <PackagePath>images\app-icon_90.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\check_notSelected.png">
+      <PackagePath>images\check_notSelected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\check_selected copy-01.png">
+      <PackagePath>images\check_selected copy-01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\check_selected copy.png">
+      <PackagePath>images\check_selected copy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\check_selected.png">
+      <PackagePath>images\check_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\clearSelection.png">
+      <PackagePath>images\clearSelection.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\next.png">
+      <PackagePath>images\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\old.sprite-voting.png">
+      <PackagePath>images\old.sprite-voting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\old.static-info.png">
+      <PackagePath>images\old.static-info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\previous.png">
+      <PackagePath>images\previous.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\sprite-button.png">
+      <PackagePath>images\sprite-button.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\sprite-pad.png">
+      <PackagePath>images\sprite-pad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\sprite-voting.png">
+      <PackagePath>images\sprite-voting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\static-check.png">
+      <PackagePath>images\static-check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\static-info.png">
+      <PackagePath>images\static-info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\static-instructions.png">
+      <PackagePath>images\static-instructions.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\css\ui-themed.css">
+      <PackagePath>css\ui-themed.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\css\ui-themed.theme-dark.css">
+      <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\css\ui-themed.theme-light.css">
+      <PackagePath>css\ui-themed.theme-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bold.eot">
+      <PackagePath>fonts\avenirnextltpro-bold.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bolditalic.eot">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-italic.eot">
+      <PackagePath>fonts\avenirnextltpro-italic.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-regular.eot">
+      <PackagePath>fonts\avenirnextltpro-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd-Black.eot">
+      <PackagePath>fonts\UniversLTStd-Black.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd-Bold.eot">
+      <PackagePath>fonts\UniversLTStd-Bold.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd.eot">
+      <PackagePath>fonts\UniversLTStd.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bold.svg">
+      <PackagePath>fonts\avenirnextltpro-bold.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bolditalic.svg">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-italic.svg">
+      <PackagePath>fonts\avenirnextltpro-italic.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-regular.svg">
+      <PackagePath>fonts\avenirnextltpro-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd-Black.svg">
+      <PackagePath>fonts\UniversLTStd-Black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd-Bold.svg">
+      <PackagePath>fonts\UniversLTStd-Bold.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd.svg">
+      <PackagePath>fonts\UniversLTStd.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bold.ttf">
+      <PackagePath>fonts\avenirnextltpro-bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bolditalic.ttf">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-italic.ttf">
+      <PackagePath>fonts\avenirnextltpro-italic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-regular.ttf">
+      <PackagePath>fonts\avenirnextltpro-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd-Black.ttf">
+      <PackagePath>fonts\UniversLTStd-Black.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd-Bold.ttf">
+      <PackagePath>fonts\UniversLTStd-Bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\UniversLTStd.ttf">
+      <PackagePath>fonts\UniversLTStd.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bold.woff">
+      <PackagePath>fonts\avenirnextltpro-bold.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-bolditalic.woff">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-italic.woff">
+      <PackagePath>fonts\avenirnextltpro-italic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\fonts\avenirnextltpro-regular.woff">
+      <PackagePath>fonts\avenirnextltpro-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\check_selected copy.ai">
+      <PackagePath>images\check_selected copy.ai</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\FacSumHeader.jpg">
+      <PackagePath>images\FacSumHeader.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\images\loading.gif">
+      <PackagePath>images\loading.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\js\spartan.js">
+      <PackagePath>js\spartan.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\rsrc\election - Copy.xml">
+      <PackagePath>rsrc\election - Copy.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\rsrc\election.xml">
+      <PackagePath>rsrc\election.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

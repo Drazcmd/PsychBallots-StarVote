@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MININT-ELKSI5L</Machine>
+    <WindowsUser>t-mattbe</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>6b89998d-7b84-4dc1-9958-b13038782ddc</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\PrinterComponent\bin\Debug\PrinterComponent.winmd">
+      <PackagePath>PrinterComponent.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bold.eot">
+      <PackagePath>css\fonts\avenirnextltpro-bold.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bolditalic.eot">
+      <PackagePath>css\fonts\avenirnextltpro-bolditalic.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-italic.eot">
+      <PackagePath>css\fonts\avenirnextltpro-italic.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-regular.eot">
+      <PackagePath>css\fonts\avenirnextltpro-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd-Black.eot">
+      <PackagePath>css\fonts\UniversLTStd-Black.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd-Bold.eot">
+      <PackagePath>css\fonts\UniversLTStd-Bold.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd.eot">
+      <PackagePath>css\fonts\UniversLTStd.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bold.eot">
+      <PackagePath>fonts\avenirnextltpro-bold.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bolditalic.eot">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-italic.eot">
+      <PackagePath>fonts\avenirnextltpro-italic.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-regular.eot">
+      <PackagePath>fonts\avenirnextltpro-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd-Black.eot">
+      <PackagePath>fonts\UniversLTStd-Black.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd-Bold.eot">
+      <PackagePath>fonts\UniversLTStd-Bold.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd.eot">
+      <PackagePath>fonts\UniversLTStd.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bold.svg">
+      <PackagePath>css\fonts\avenirnextltpro-bold.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bolditalic.svg">
+      <PackagePath>css\fonts\avenirnextltpro-bolditalic.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-italic.svg">
+      <PackagePath>css\fonts\avenirnextltpro-italic.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-regular.svg">
+      <PackagePath>css\fonts\avenirnextltpro-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd-Black.svg">
+      <PackagePath>css\fonts\UniversLTStd-Black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd-Bold.svg">
+      <PackagePath>css\fonts\UniversLTStd-Bold.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd.svg">
+      <PackagePath>css\fonts\UniversLTStd.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bold.svg">
+      <PackagePath>fonts\avenirnextltpro-bold.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bolditalic.svg">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-italic.svg">
+      <PackagePath>fonts\avenirnextltpro-italic.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-regular.svg">
+      <PackagePath>fonts\avenirnextltpro-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd-Black.svg">
+      <PackagePath>fonts\UniversLTStd-Black.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd-Bold.svg">
+      <PackagePath>fonts\UniversLTStd-Bold.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd.svg">
+      <PackagePath>fonts\UniversLTStd.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bold.ttf">
+      <PackagePath>css\fonts\avenirnextltpro-bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bolditalic.ttf">
+      <PackagePath>css\fonts\avenirnextltpro-bolditalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-italic.ttf">
+      <PackagePath>css\fonts\avenirnextltpro-italic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-regular.ttf">
+      <PackagePath>css\fonts\avenirnextltpro-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd-Black.ttf">
+      <PackagePath>css\fonts\UniversLTStd-Black.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd-Bold.ttf">
+      <PackagePath>css\fonts\UniversLTStd-Bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\UniversLTStd.ttf">
+      <PackagePath>css\fonts\UniversLTStd.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bold.ttf">
+      <PackagePath>fonts\avenirnextltpro-bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bolditalic.ttf">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-italic.ttf">
+      <PackagePath>fonts\avenirnextltpro-italic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-regular.ttf">
+      <PackagePath>fonts\avenirnextltpro-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd-Black.ttf">
+      <PackagePath>fonts\UniversLTStd-Black.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd-Bold.ttf">
+      <PackagePath>fonts\UniversLTStd-Bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\UniversLTStd.ttf">
+      <PackagePath>fonts\UniversLTStd.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bold.woff">
+      <PackagePath>css\fonts\avenirnextltpro-bold.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-bolditalic.woff">
+      <PackagePath>css\fonts\avenirnextltpro-bolditalic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-italic.woff">
+      <PackagePath>css\fonts\avenirnextltpro-italic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\fonts\avenirnextltpro-regular.woff">
+      <PackagePath>css\fonts\avenirnextltpro-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bold.woff">
+      <PackagePath>fonts\avenirnextltpro-bold.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-bolditalic.woff">
+      <PackagePath>fonts\avenirnextltpro-bolditalic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-italic.woff">
+      <PackagePath>fonts\avenirnextltpro-italic.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\fonts\avenirnextltpro-regular.woff">
+      <PackagePath>fonts\avenirnextltpro-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\app-icon.png">
+      <PackagePath>css\images\app-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\app-icon_60.png">
+      <PackagePath>css\images\app-icon_60.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\check_notSelected.png">
+      <PackagePath>css\images\check_notSelected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\check_selected copy-01.png">
+      <PackagePath>css\images\check_selected copy-01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\check_selected copy.png">
+      <PackagePath>css\images\check_selected copy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\check_selected.png">
+      <PackagePath>css\images\check_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\clearSelection.png">
+      <PackagePath>css\images\clearSelection.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\logo.png">
+      <PackagePath>css\images\logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\next.png">
+      <PackagePath>css\images\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\old.sprite-voting.png">
+      <PackagePath>css\images\old.sprite-voting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\old.static-info.png">
+      <PackagePath>css\images\old.static-info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\previous.png">
+      <PackagePath>css\images\previous.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\smalllogo.png">
+      <PackagePath>css\images\smalllogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\splashscreen.png">
+      <PackagePath>css\images\splashscreen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\sprite-button.png">
+      <PackagePath>css\images\sprite-button.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\sprite-pad.png">
+      <PackagePath>css\images\sprite-pad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\sprite-voting.png">
+      <PackagePath>css\images\sprite-voting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\static-check.png">
+      <PackagePath>css\images\static-check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\static-info.png">
+      <PackagePath>css\images\static-info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\static-instructions.png">
+      <PackagePath>css\images\static-instructions.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\storelogo.png">
+      <PackagePath>css\images\storelogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\app-icon.png">
+      <PackagePath>images\app-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\app-icon_60.png">
+      <PackagePath>images\app-icon_60.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\check_notSelected.png">
+      <PackagePath>images\check_notSelected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\check_selected copy-01.png">
+      <PackagePath>images\check_selected copy-01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\check_selected copy.png">
+      <PackagePath>images\check_selected copy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\check_selected.png">
+      <PackagePath>images\check_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\clearSelection.png">
+      <PackagePath>images\clearSelection.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\next.png">
+      <PackagePath>images\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\old.sprite-voting.png">
+      <PackagePath>images\old.sprite-voting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\old.static-info.png">
+      <PackagePath>images\old.static-info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\previous.png">
+      <PackagePath>images\previous.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\sprite-button.png">
+      <PackagePath>images\sprite-button.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\sprite-pad.png">
+      <PackagePath>images\sprite-pad.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\sprite-voting.png">
+      <PackagePath>images\sprite-voting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\static-check.png">
+      <PackagePath>images\static-check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\static-info.png">
+      <PackagePath>images\static-info.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\static-instructions.png">
+      <PackagePath>images\static-instructions.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\check_selected copy.ai">
+      <PackagePath>css\images\check_selected copy.ai</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\check_selected copy.ai">
+      <PackagePath>images\check_selected copy.ai</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\images\loading.gif">
+      <PackagePath>css\images\loading.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\images\loading.gif">
+      <PackagePath>images\loading.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\star.css">
+      <PackagePath>css\star.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\default - Copy.html">
+      <PackagePath>default - Copy.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\print.html">
+      <PackagePath>print.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\js\star.js">
+      <PackagePath>js\star.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\rsrc\election - Copy.xml">
+      <PackagePath>rsrc\election - Copy.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Shared\rsrc\election.xml">
+      <PackagePath>rsrc\election.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

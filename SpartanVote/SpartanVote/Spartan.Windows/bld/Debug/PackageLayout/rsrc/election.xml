@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<election>
+  <race>
+    <title>Favorite Demo in Software Area</title>
+    <number>1</number>
+    <raceText>
+      Which of the following was your favorite demo in the Software area?
+    </raceText>
+    <choice><name>Node Atlas</name></choice>
+    <choice><name>Madoko</name></choice>
+    <choice><name>Code Hunt</name></choice>
+    <choice><name>Orleans</name></choice>
+    <choice><name>Search Space Optimization</name></choice>
+    <choice><name>Time-Travelling Debugger for JavaScript</name></choice>
+    <choice><name>Trill &amp; Tempe</name></choice>
+    <choice><name>Batfish</name></choice>
+    <choice><name>Wireless surveillance-based system</name></choice>
+    <choice><name>What can we solve with a quantum computer?</name></choice>
+  </race>
+
+  <race>
+    <title>Favorite Demo in Artificial Intelligence Area</title>
+    <number>2</number>
+    <raceText>
+      Which of the following was your favorite demo in the Artificial Intelligence area?
+    </raceText>
+    <choice><name>Accurately guess your weight, waist size and BMI</name></choice>
+    <choice><name>Beyond A/B tests: multiworld testing as a service</name></choice>
+    <choice><name>Deep models for automated melanoma diagnosis</name></choice>
+    <choice><name>Interactive ML</name></choice>
+    <choice><name>Fully articulated hand tracking</name></choice>
+    <choice><name>Image captioning with near-human performance</name></choice>
+    <choice><name>SysSieve</name></choice>
+  </race>
+  
+  <race>
+    <title>Favorite Demo in Computing in Society Area</title>
+    <number>3</number>
+    <raceText>
+      Which of the following was your favorite demo in the Computing in Society area?
+    </raceText>
+    <choice><name>STAR-Vote</name></choice>
+    <choice><name>Eye Gaze</name></choice>
+    <choice><name>Minecraft in education</name></choice>
+    <choice><name>Project Premonition</name></choice>
+    <choice><name>qCards</name></choice>
+  </race>
+  
+  <race>
+    <title>Favorite Demo in Research in Action Area</title>
+    <number>4</number>
+    <raceText>
+      Which of the following was your favorite demo in the Research in Action area?
+    </raceText>
+    <choice><name>FlashM</name></choice>
+    <choice><name>Microsoft HoloLens</name></choice>
+    <choice><name>MSR Computational Photography applications</name></choice>
+    <choice><name>NUIGraph</name></choice>
+    <choice><name>Power Map</name></choice>
+    <choice><name>Microsoft Prediction Lab</name></choice>
+    <choice><name>Reimagining personal healthcare</name></choice>
+    <choice><name>Skype Translator</name></choice>
+  </race>
+  
+  <race>
+    <title>Favorite Demo in Devices Area</title>
+    <number>5</number>
+    <raceText>
+      Which of the following was your favorite demo in the Devices area?
+    </raceText>
+    <choice><name>Be there: 3D audio virtual presence</name></choice>
+    <choice><name>DynaChord</name></choice>
+    <choice><name>Presenter Camera</name></choice>
+    <choice><name>TouchDevelop</name></choice>
+    <choice><name>RoomAlive Toolkit</name></choice>
+    <choice><name>Instant communication between phones and touch</name></choice>
+    <choice><name>Textile electronic touch sensor</name></choice>
+  </race>
+  
+  <race>
+    <title>Favorite Demo in Engaging with Microsoft Area</title>
+    <number>6</number>
+    <raceText>
+      Which of the following was your favorite demo in the Engaging with Microsoft area?
+    </raceText>
+    <choice><name>Artificial intelligence at Microsoft</name></choice>
+    <choice><name>Azure for Research and Azure Machine Learning</name></choice>
+    <choice><name>Data Science Outreach Program</name></choice>
+    <choice><name>Open Source Software from Microsoft</name></choice>
+    <choice><name>Project Catapult</name></choice>
+    <choice><name>Project Oxford</name></choice>
+    <choice><name>Research Fellowships</name></choice>
+    <choice><name>Research Internships</name></choice>
+    <choice><name>Research Services</name></choice>
+    <choice><name>What's it like to work at Microsoft Research?</name></choice>
+  </race>
+
+  <race>
+    <title>Favorite Area</title>
+    <number>7</number>
+    <raceText>
+      Which of the following was your favorite area at the Faculty Summit Demo event?
+    </raceText>
+    <choice>
+      <name>Artificial Intelligence Area</name>
+    </choice>
+    <choice>
+      <name>Computing in Society Area</name>
+    </choice>
+    <choice>
+      <name>Research in Action Area</name>
+    </choice>
+    <choice>
+      <name>Software Area</name>
+    </choice>
+    <choice>
+      <name>Devices Area</name>
+    </choice>
+    <choice>
+      <name>Engaging with Microsoft Area</name>
+    </choice>
+  </race>
+
+
+</election>

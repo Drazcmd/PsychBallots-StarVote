@@ -1,0 +1,6 @@
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication1\bin\Debug\PrintServer.exe.config
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication1\bin\Debug\PrintServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication1\bin\Debug\PrintServer.pdb
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication1\obj\Debug\PrintServer.csprojResolveAssemblyReference.cache
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication1\obj\Debug\PrintServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication1\obj\Debug\PrintServer.pdb
