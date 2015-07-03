@@ -230,7 +230,7 @@ function start() {
 
     // NOTE We can only handle up to 26 items
     for (var idx = 0; idx < numberOfItems; idx++) {
-        
+
         var reviewButton = document.createElement("div");
 
         reviewButton.id = "race" + idx;
@@ -388,7 +388,7 @@ function Next(y) {
         document.getElementById('progress').innerHTML = currentRace + 1 + ' of ' + numberOfItems;
         //progress in footer
         nextRace(Counter);
-    }    //while voting, clicking next records selection and continues to next race 
+    }    //while voting, clicking next records selection and continues to next race
     else if (Counter < numberOfRaces && Counter > 0) {
 
         console.log("Showing race " + Counter + "!");
@@ -1088,7 +1088,7 @@ function printIframe() {
         ////Windows.Graphics.Printing.PrintManager.showPrintUIAsync();
         //WinJS.UI.processAll();
     }
- 
+
 
 }
 
@@ -1141,46 +1141,74 @@ function generatePrintableHTML() {
     output += 'html * { font-family: "Avenir Next" !important; color: black;}\n';
 
     //CSS classes, taken directly (but formatted differently to save space) from the example HTML/CSS printout 6/18/15
-    //TODO - make this more legible
-    
-    output += 'hr.divideRace { /* Formatting for the black horizontal line that divides up the races */' +
+
+    output += '' +
+            'hr.divideRace { /* Formatting for the black horizontal line that divides up the races */' +
             ' display: block; font-size: 13.5pt; margin-top: -1.5pt; margin-left: 0pt; margin-bottom: 10pt;' +
-            ' margin-right: 0pt; font-weight: bolder; }\n' +
+            ' margin-right: 0pt; font-weight: bolder; }' +
+            '\n' +
             'h1 { /*Upper left header ("Official Ballot")*/ display: inline; font-size: 13.5pt; margin-top: 0pt;' +
-            ' margin-left: 36pt; margin-bottom: 0pt; margin-right: 0pt; font-weight: bold; } \n' +
+            ' margin-left: 36pt; margin-bottom: 0pt; margin-right: 0pt; font-weight: bold; }\n' +
+            '\n' +
+            '' +
             'h2 { /*Upper rightt header ("PLACE THIS IN BALLOT BOX")*/ display: inline;' +
-            ' text-align: right; font-size: 17.3pt; margin-top: 0pt; margin-right: 36pt; margin-left: 106pt;' +
-            ' margin-bottom: 0pt; font-weight: bold; } \n' +
+            ' text-align: right; font-size: 17.3pt; margin-top: 0pt; margin-right: 36pt; margin-left: 100pt;' +
+            ' margin-bottom: 0pt; font-weight: bold;' +
+            /* might want to remove this boxing/highlighting later */ 'border:2.75pt solid black; background-color: #D6D7D8; }\n' +
+            '\n' +
+            '' +
             'divDate { /*Date, just underneath the first (upper left)' +
             ' header*/ display:block; font-size: 10.1pt; margin-top: -5pt; margin-left: 36pt; margin-bottom: 0pt;' +
-            ' margin-right: 36pt; font-weight: normal; } \n' + 
+            ' margin-right: 36pt; font-weight: normal; }\n' +
             ' divLocation { /*Location, just underneath the date*/' +
             ' display: block; font-size: 10.1pt; margin-top: -2.5pt; margin-left: 36pt; margin-bottom: 19pt;' +
-            ' margin-right: 36pt; font-weight: normal; }  \n' + 
+            ' margin-right: 36pt; font-weight: normal; }\n' +
+            '\n' +
+            '' +
             'div.electionOrProposition { /*The name of each election */' +
             ' display:block; font-size: 11pt; margin-top:0pt; margin-left:0pt; margin-bottom: 1.5pt; margin-right:0pt; ' +
-            ' font-weight: bold } \n' +  
+            ' font-weight: bold }\n' +
+            '\n' +
+            '' +
             'div.namePlusAND { /* ONLY used for the first person of two total */ display:block;' +
             ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight:' +
             ' normal; }  div.onlyOrSecondPerson { /* Used for one person total, or the second of two.' +
             ' THIS ONE IS SPECIAL - it relies on using the width field to work with .party!! */ display: inline-block;' +
             ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight:' +
-            ' normal; width: 82%; }\n' + 
+            ' normal; width: 82%; }\n' +
+            '\n' +
+            '' +
             'div.namePlusAND {/* ONLY used for the first person of two total */ display:block;' +
             ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight: normal; } \n' +
+            '\n' +
+            '' +
             'div.onlyOrSecondPerson { /* Used for one person total, or the second of two. THIS ONE IS SPECIAL - it relies' +
             ' on using the width field to work with .party!! */ display: inline-block; font-size: 10.5pt; margin-top:0pt;' +
-            ' margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight: normal; width: 82%; }\n' +  
+            ' margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight: normal; width: 82%; }\n' +
+            '\n' +
+            '' +
             'div.party { /* SPECIAL - only used for sticking party on the same line as the (second, if a team) person being voted for */' +
-            ' display: inline-block; font-size: 10.75pt; text-align: right; font-weight:bold; width: 8%; }\n' + 
+            ' display: inline-block; font-size: 10.75pt; text-align: right; font-weight:bold; width: 8%; }\n' +
+            '\n' +
+            '' +
             'div.noSelection_outer { /* SPECIAL - only used for highlighting the special "YOU DID NOT SELECT ANYTHING" message */ display: block;' +
-            ' background-color: #D6D7D8; } \n' +  
+            ' background-color: #D6D7D8; } \n' +
+            '\n' +
+            '' +
             'div.noSelection_inner {/* SPECIAL - only used for the font and positioning of' +
             ' the special "YOU DID NOT SELECT ANYTHING" message */ font-size: 10.75pt; margin-top:0pt; margin-left:6pt;' +
-            ' margin-bottom: 0pt; margin-right:0pt; font-weight: bold; }\n' + 
+            ' margin-bottom: 0pt; margin-right:0pt; font-weight: bold; }\n' +
+            '\n' +
+            '' +
             'divLeftSide {/*SPECIAL - Contains the left side of the' +
-            ' page*/ float: left; width: 190pt; padding-left: 36pt; line-height:15pt; }\n divRightSide {/*SPECIAL -' +
-            ' Contains the right side of the page*/ float: right; width: 190pt; margin-right: 36pt; line-height:15.5pt; }'
+            ' page*/ float: left; width: 190pt; padding-left: 36pt; line-height:15pt; }\n' +
+            '\n' +
+            '' +
+            'divRightSide {/*SPECIAL - Contains the right side of the page*/ float: right; width: 190pt; margin-right: 36pt; line-height:15.5pt; }\n' +
+            '\n' +
+            '' +
+            'divFooter { /*SPECIAL - contains the bar code*/ left: 0; bottom: 0; position: fixed; display: block; } \n' +
+            '\n';
 
     output += '</style>\n';
     output += '</head>\n';
@@ -1220,53 +1248,30 @@ function generatePrintableHTML() {
     output += '</divRightSide>\n';
 
     //TODO - what's this line doing?
-    output += document.getElementById('Results').value;
+    //output += document.getElementById('Results').value;
+    output += '</body>\n\n';
 
-    //TODO - change the image to be better!
-    output += '<img src="fakeBarcode.jpg" alt="BARCODE GOES HERE" style="width:350px;height:35px;">'
+    //now stick in the barcode
+    output += '<divFooter>\n' +
+              '<img src="fakeBarcode.jpg" alt="BARCODE GOES HERE" style="width:275pt;height:25pt;">\n' +
+              '</divFooter>\n\n'
 
-    //now just close it up
-    output += '</body>\n';
     output += '</html>\n';
     return output;
 }
 /**
  * The main function that handles each individual "block" of HTML for the printout of hte ballot
- * I am defining one "block" to be either one race or proposition 
+ * I am defining one "block" to be either one race or proposition
  *
  * This function will be called once for each iteration of the for loops in the main HTML generating function
  *
- *  ***TODO - Right now, we rely on hardcoding in selections the helper functions for dealing with multi-person races 
+ *  ***TODO - Right now, we rely on hardcoding in selections the helper functions for dealing with multi-person races
  *            using the number of the race or proposition (what I later call the "block number") since the races
- *            for this research is remaining fixed (for the next few months at least) 
- * 
+ *            for this research is remaining fixed (for the next few months at least)
+ *
  *            Eventually, we'll need to have a way to determine up here what type of block we're dealing with,
  *            and call one of the helper functions based on this intelligent selection, *            all blocks the same way.
- * 
- *  STYLE GUIDE for CSS:
  *
- *     Excepting what is listed at the bottom of this:
- *     Each piece will have a 1 line description
- *     All colons will have one space following them
- *     There will be no spaces before the semicolons
- *     Depending on the font weight, you may need to change the size slightly
- *     Prefer using top margins for spacing when possible
- *
- *     The order shall go:
- *     description
- *     display
- *     fontsize
- *     top margin (basically, go counterclockwise)
- *     left margin
- *     bottom margin
- *     right margin
- *     bolding weight of font
- *
- *
- *     EXCEPTIONS:
- *        1.xdivLeftSide and divRightSide: 2 floating divs I use to split up the left and right side
- *
- *        2. Div.party and div.onlyOrSecondPerson: Getting the party name inline to the right of candidate names
  */
 function handleOneBlockHTML(blockNumber) {
     var chosenTicket;
@@ -1310,13 +1315,13 @@ function handleOneBlockHTML(blockNumber) {
     //this means the voter DID make a selection
     else if (selection == true) {
         //TODO - see docstring; eventually this will need to support more types of blocks, and handle more than just Presidential two-person tickets
-        
+
         if (twoPersonSelection == true) {
             if (nameOfRace == "President and Vice President") {
                 var helperArray = chosenTicket.split(" and ", 2);
                 console.log("\n\n\n\n testing - these should be two names!->   " +  helperArray[0] + helperArray[1] + "from this array ->   " + helperArray);
                 return generateBlock_Race_TwoPersonSelection(blockNumber, helperArray[0], helperArray[1], chosenTicketParty, nameOfRace);
-            } 
+            }
             else {
                 console.log("\nAs of now, only the Presidential election can have two candidates\n");
                 return "ERROR IN TWO PERSON SELECTION!!!!!! nameOfRace is " + nameOfRace + "instead of President And Vice President";
@@ -1343,17 +1348,17 @@ function handleOneBlockHTML(blockNumber) {
 }
 
 /*************************************
- *** BEGIN BLOCK GENERATION FUNCTIONS 
+ *** BEGIN BLOCK GENERATION FUNCTIONS
  *
  * These are the various functions that generate the actual text of each of the blocks
  *
  * Name style:
  *      generateBlock_<either 'Race' or Proposition>_<additional specifications>
- *  
+ *
  * inputs: blockNumber, chosenCandidate, chosenCandidateParty
- * 
+ *
  * Each should follow the same general format (excepting the NOSELECTION function), and will return the text as a string
- * 
+ *
  * TODO - propositions
  */
 
@@ -1393,16 +1398,16 @@ function generateBlock_Race_OnePersonSelection (blockNumber, chosenCandidate, ch
  * Standard sort of election race, but with TWO people running together on each ticket
  *
  * For the demo, this is only for the presidential election'
- * 
+ *
  * TODO - eventually this will need to handle more than just the presidential election
- 
+
  * TODO - don't use block number to determine the race like this - change it to take in an inputted
  * string like with the candidate and part
  */
 function generateBlock_Race_TwoPersonSelection (blockNumber, chosenCandidate0, chosenCandidate1, chosenCandidateParty, nameOfRace){
-    
+
     var constructingBlock = '';
-    
+
     if (blockNumber != 0) {
         //TODO - what sort of exception or error?
         console.log("Uh oh! Something other than the 0th race in the two person selection! Current blockNumber is: " + blockNumber);
@@ -1415,7 +1420,7 @@ function generateBlock_Race_TwoPersonSelection (blockNumber, chosenCandidate0, c
     console.log("\n");
     console.log("The things we have are blockNumber, chosenCandidate0, chosenCandidate1, chosenCandidateParty, and nameOfRace ->    " + blockNumber + chosenCandidate0 + chosenCandidate1 + chosenCandidateParty + nameOfRace);
     console.log("\n");
-    
+
     //stick in the name of the election
     constructingBlock += '<div class="electionOrProposition">' + nameOfRace +  '</div>';
 
@@ -1450,13 +1455,9 @@ function generateBlock_proposition(blockNumber, answerSelection) {
     constructingBlock += '<div class="electionOrProposition">' + nameOfRace +  '</div>';
     constructingBlock += '<div class="onlyOrSecondPerson>' + answerSelection + '</div>';
     constructingBlock += '<hr class ="divideRace">';
- 
+
 }
 /*** END BLOCK GENERATION FUNCTIONS
  ***********************************/
 
 // JavaScript Document
-
-
-
-
