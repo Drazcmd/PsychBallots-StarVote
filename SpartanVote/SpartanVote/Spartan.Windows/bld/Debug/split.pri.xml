@@ -409,39 +409,14 @@
 				</NamedResource>
 			</ResourceMapSubtree>
 			<ResourceMapSubtree name="images">
-				<NamedResource name="app-icon.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon.png">
-					<Candidate type="Path">
-						<Value>images\app-icon.png</Value>
-					</Candidate>
-				</NamedResource>
 				<NamedResource name="app-icon_100.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_100.png">
-					<Candidate type="Path">
-						<Value>images\app-icon_100.png</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="app-icon_150.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_150.png">
-					<Candidate type="Path">
-						<Value>images\app-icon_150.png</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="app-icon_30.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_30.png">
-					<Candidate type="Path">
-						<Value>images\app-icon_30.png</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="app-icon_50.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_50.png">
-					<Candidate type="Path">
-						<Value>images\app-icon_50.png</Value>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\app-icon_100.scale-100.png</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="app-icon_60.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_60.png">
 					<Candidate type="Path">
 						<Value>images\app-icon_60.png</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="app-icon_90.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/app-icon_90.png">
-					<Candidate type="Path">
-						<Value>images\app-icon_90.png</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="check_notSelected.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/check_notSelected.png">
@@ -472,11 +447,6 @@
 				<NamedResource name="clearSelection.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/clearSelection.png">
 					<Candidate type="Path">
 						<Value>images\clearSelection.png</Value>
-					</Candidate>
-				</NamedResource>
-				<NamedResource name="FacSumHeader.jpg" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/FacSumHeader.jpg">
-					<Candidate type="Path">
-						<Value>images\FacSumHeader.jpg</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="loading.gif" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/loading.gif">
@@ -532,6 +502,16 @@
 				<NamedResource name="sprite-voting.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/sprite-voting.png">
 					<Candidate type="Path">
 						<Value>images\sprite-voting.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/Square30x30Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square30x30Logo.scale-100.png</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="static-check.png" uri="ms-resource://6b89998d-7b84-4dc1-9958-b13038782ddc/Files/images/static-check.png">

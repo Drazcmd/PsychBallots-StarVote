@@ -1,17 +1,60 @@
 Area,Name,Votes
-1,Code Hunt,1
-1,Search Space Optimization,1
-1,No Selection,1
-2,Fully articulated hand tracking,1
-2,Beyond A/B tests: multiworld testing as a service,1
-2,No Selection,1
-3,No Selection,1
-3,STAR-Vote,2
-4,MSR Computational Photography applications,1
-4,No Selection,2
-5,No Selection,2
-5,RoomAlive Toolkit,1
-6,No Selection,2
-6,Data Science Outreach Program,1
-7,No Selection,2
-7,Devices Area,1
+Favorite Demo in Software Area,Node Atlas,1
+Favorite Demo in Software Area,Madoko,0
+Favorite Demo in Software Area,Code Hunt,0
+Favorite Demo in Software Area,Orleans,0
+Favorite Demo in Software Area,Search Space Optimization,0
+Favorite Demo in Software Area,Time-Travelling Debugger for JavaScript,0
+Favorite Demo in Software Area,Trill & Tempe,0
+Favorite Demo in Software Area,Batfish,0
+Favorite Demo in Software Area,Wireless surveillance-based system,0
+Favorite Demo in Software Area,What can we solve with a quantum computer?,0
+Favorite Demo in Software Area,No Selection,1
+Favorite Demo in Artificial Intelligence Area,Accurately predicting body fat, waist size, and BMI,0
+Favorite Demo in Artificial Intelligence Area,Beyond A/B tests: multiworld testing as a service,0
+Favorite Demo in Artificial Intelligence Area,Deep models for automated melanoma diagnosis,1
+Favorite Demo in Artificial Intelligence Area,Interactive ML,0
+Favorite Demo in Artificial Intelligence Area,Fully articulated hand tracking,0
+Favorite Demo in Artificial Intelligence Area,Image captioning with near-human performance,0
+Favorite Demo in Artificial Intelligence Area,SysSieve,0
+Favorite Demo in Artificial Intelligence Area,No Selection,1
+Favorite Demo in Computing in Society Area,STAR-Vote,1
+Favorite Demo in Computing in Society Area,Eye Gaze,0
+Favorite Demo in Computing in Society Area,Minecraft in education,0
+Favorite Demo in Computing in Society Area,Project Premonition,0
+Favorite Demo in Computing in Society Area,qCards,0
+Favorite Demo in Computing in Society Area,No Selection,1
+Favorite Demo in Research in Action Area,FlashM,0
+Favorite Demo in Research in Action Area,Microsoft HoloLens,0
+Favorite Demo in Research in Action Area,MSR Computational Photography applications,0
+Favorite Demo in Research in Action Area,NUIGraph,1
+Favorite Demo in Research in Action Area,Power Map,0
+Favorite Demo in Research in Action Area,Microsoft Prediction Lab,0
+Favorite Demo in Research in Action Area,Reimagining personal healthcare,0
+Favorite Demo in Research in Action Area,Skype Translator,0
+Favorite Demo in Research in Action Area,No Selection,1
+Favorite Demo in Devices Area,Be there: 3D audio virtual presence,0
+Favorite Demo in Devices Area,DynaChord,0
+Favorite Demo in Devices Area,Presenter Camera,0
+Favorite Demo in Devices Area,TouchDevelop,0
+Favorite Demo in Devices Area,RoomAlive Toolkit,1
+Favorite Demo in Devices Area,Secure communication between phones and touch,0
+Favorite Demo in Devices Area,Textile electronic touch sensor,0
+Favorite Demo in Devices Area,No Selection,1
+Favorite Demo in Engaging with Microsoft Area,Artificial intelligence at Microsoft,0
+Favorite Demo in Engaging with Microsoft Area,Azure for Research and Azure Machine Learning,1
+Favorite Demo in Engaging with Microsoft Area,Data Science Outreach Program,0
+Favorite Demo in Engaging with Microsoft Area,Open Source Software from Microsoft,1
+Favorite Demo in Engaging with Microsoft Area,Project Catapult,0
+Favorite Demo in Engaging with Microsoft Area,Project Oxford,0
+Favorite Demo in Engaging with Microsoft Area,Research Fellowships,0
+Favorite Demo in Engaging with Microsoft Area,Research Internships,0
+Favorite Demo in Engaging with Microsoft Area,Research Services,0
+Favorite Demo in Engaging with Microsoft Area,What's it like to work at Microsoft Research?,0
+Favorite Area,Artificial Intelligence Area,1
+Favorite Area,Computing in Society Area,0
+Favorite Area,Research in Action Area,0
+Favorite Area,Software Area,0
+Favorite Area,Devices Area,0
+Favorite Area,Engaging with Microsoft Area,0
+Favorite Area,No Selection,1

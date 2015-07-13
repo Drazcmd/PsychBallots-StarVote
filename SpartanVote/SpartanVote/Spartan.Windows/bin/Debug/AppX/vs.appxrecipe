@@ -8,19 +8,19 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>6b89998d-7b84-4dc1-9958-b13038782ddc</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>2267B14AF1C963A32D58D1B806F886BE6D7510475D73F67EF4403094016EFF19</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>6b89998d-7b84-4dc1-9958-b13038782ddc_1.0.2.12_neutral__crmst6dmkmt1c</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>A2B55071BC80EA3E8E2104F752C2A3960C8113E2AA911DBF5C99D866BE8F12BD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6b89998d-7b84-4dc1-9958-b13038782ddc_1.0.3.21_neutral__crmst6dmkmt1c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6b89998d-7b84-4dc1-9958-b13038782ddc_crmst6dmkmt1c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>6b89998d-7b84-4dc1-9958-b13038782ddc</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=t-mattbe</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.2.12</RegisteredVersion>
+    <RegisteredVersion>1.0.3.21</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-02T20:39:40.075</Modified>
+      <Modified>2015-07-09T17:53:44.683</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -58,31 +58,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bold.eot">
       <PackagePath>fonts\avenirnextltpro-bold.eot</PackagePath>
-      <Modified>2015-07-02T20:31:07.160</Modified>
+      <Modified>2015-07-09T03:17:31.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bolditalic.eot">
       <PackagePath>fonts\avenirnextltpro-bolditalic.eot</PackagePath>
-      <Modified>2015-07-02T20:31:07.208</Modified>
+      <Modified>2015-07-09T03:17:31.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-italic.eot">
       <PackagePath>fonts\avenirnextltpro-italic.eot</PackagePath>
-      <Modified>2015-07-02T20:31:07.245</Modified>
+      <Modified>2015-07-09T03:17:31.792</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-regular.eot">
       <PackagePath>fonts\avenirnextltpro-regular.eot</PackagePath>
-      <Modified>2015-07-02T20:31:07.327</Modified>
+      <Modified>2015-07-09T03:17:31.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd-Black.eot">
       <PackagePath>fonts\UniversLTStd-Black.eot</PackagePath>
-      <Modified>2015-07-02T20:31:07.096</Modified>
+      <Modified>2015-07-09T03:17:31.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd-Bold.eot">
       <PackagePath>fonts\UniversLTStd-Bold.eot</PackagePath>
-      <Modified>2015-07-02T20:31:07.117</Modified>
+      <Modified>2015-07-09T03:17:31.690</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd.eot">
       <PackagePath>fonts\UniversLTStd.eot</PackagePath>
-      <Modified>2015-07-02T20:31:07.137</Modified>
+      <Modified>2015-07-09T03:17:31.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\css\fonts\avenirnextltpro-bold.svg">
       <PackagePath>css\fonts\avenirnextltpro-bold.svg</PackagePath>
@@ -114,31 +114,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bold.svg">
       <PackagePath>fonts\avenirnextltpro-bold.svg</PackagePath>
-      <Modified>2015-07-02T20:31:07.168</Modified>
+      <Modified>2015-07-09T03:17:31.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bolditalic.svg">
       <PackagePath>fonts\avenirnextltpro-bolditalic.svg</PackagePath>
-      <Modified>2015-07-02T20:31:07.219</Modified>
+      <Modified>2015-07-09T03:17:31.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-italic.svg">
       <PackagePath>fonts\avenirnextltpro-italic.svg</PackagePath>
-      <Modified>2015-07-02T20:31:07.252</Modified>
+      <Modified>2015-07-09T03:17:31.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-regular.svg">
       <PackagePath>fonts\avenirnextltpro-regular.svg</PackagePath>
-      <Modified>2015-07-02T20:31:07.334</Modified>
+      <Modified>2015-07-09T03:17:31.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd-Black.svg">
       <PackagePath>fonts\UniversLTStd-Black.svg</PackagePath>
-      <Modified>2015-07-02T20:31:07.103</Modified>
+      <Modified>2015-07-09T03:17:31.679</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd-Bold.svg">
       <PackagePath>fonts\UniversLTStd-Bold.svg</PackagePath>
-      <Modified>2015-07-02T20:31:07.124</Modified>
+      <Modified>2015-07-09T03:17:31.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd.svg">
       <PackagePath>fonts\UniversLTStd.svg</PackagePath>
-      <Modified>2015-07-02T20:31:07.145</Modified>
+      <Modified>2015-07-09T03:17:31.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\css\fonts\avenirnextltpro-bold.ttf">
       <PackagePath>css\fonts\avenirnextltpro-bold.ttf</PackagePath>
@@ -170,31 +170,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bold.ttf">
       <PackagePath>fonts\avenirnextltpro-bold.ttf</PackagePath>
-      <Modified>2015-07-02T20:31:07.188</Modified>
+      <Modified>2015-07-09T03:17:31.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bolditalic.ttf">
       <PackagePath>fonts\avenirnextltpro-bolditalic.ttf</PackagePath>
-      <Modified>2015-07-02T20:31:07.228</Modified>
+      <Modified>2015-07-09T03:17:31.780</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-italic.ttf">
       <PackagePath>fonts\avenirnextltpro-italic.ttf</PackagePath>
-      <Modified>2015-07-02T20:31:07.311</Modified>
+      <Modified>2015-07-09T03:17:31.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-regular.ttf">
       <PackagePath>fonts\avenirnextltpro-regular.ttf</PackagePath>
-      <Modified>2015-07-02T20:31:07.341</Modified>
+      <Modified>2015-07-09T03:17:31.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd-Black.ttf">
       <PackagePath>fonts\UniversLTStd-Black.ttf</PackagePath>
-      <Modified>2015-07-02T20:31:07.110</Modified>
+      <Modified>2015-07-09T03:17:31.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd-Bold.ttf">
       <PackagePath>fonts\UniversLTStd-Bold.ttf</PackagePath>
-      <Modified>2015-07-02T20:31:07.131</Modified>
+      <Modified>2015-07-09T03:17:31.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\UniversLTStd.ttf">
       <PackagePath>fonts\UniversLTStd.ttf</PackagePath>
-      <Modified>2015-07-02T20:31:07.152</Modified>
+      <Modified>2015-07-09T03:17:31.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\css\fonts\avenirnextltpro-bold.woff">
       <PackagePath>css\fonts\avenirnextltpro-bold.woff</PackagePath>
@@ -214,19 +214,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bold.woff">
       <PackagePath>fonts\avenirnextltpro-bold.woff</PackagePath>
-      <Modified>2015-07-02T20:31:07.197</Modified>
+      <Modified>2015-07-09T03:17:31.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-bolditalic.woff">
       <PackagePath>fonts\avenirnextltpro-bolditalic.woff</PackagePath>
-      <Modified>2015-07-02T20:31:07.236</Modified>
+      <Modified>2015-07-09T03:17:31.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-italic.woff">
       <PackagePath>fonts\avenirnextltpro-italic.woff</PackagePath>
-      <Modified>2015-07-02T20:31:07.318</Modified>
+      <Modified>2015-07-09T03:17:31.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\fonts\avenirnextltpro-regular.woff">
       <PackagePath>fonts\avenirnextltpro-regular.woff</PackagePath>
-      <Modified>2015-07-02T20:31:07.350</Modified>
+      <Modified>2015-07-09T03:17:31.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\css\images\app-icon.png">
       <PackagePath>css\images\app-icon.png</PackagePath>
@@ -308,8 +308,8 @@
       <PackagePath>css\images\storelogo.png</PackagePath>
       <Modified>2014-06-03T00:38:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\app-icon_100.png">
-      <PackagePath>images\app-icon_100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\app-icon_100.scale-100.png">
+      <PackagePath>images\app-icon_100.scale-100.png</PackagePath>
       <Modified>2015-06-17T20:08:29.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\app-icon_60.png">
@@ -382,6 +382,16 @@
       <PackagePath>images\sprite-voting.png</PackagePath>
       <Modified>2015-06-17T20:08:29.876</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-26T22:52:07.576</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-26T22:52:34.882</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\static-check.png">
       <PackagePath>images\static-check.png</PackagePath>
       <Modified>2015-06-17T20:08:29.893</Modified>
@@ -393,6 +403,11 @@
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\static-instructions.png">
       <PackagePath>images\static-instructions.png</PackagePath>
       <Modified>2015-06-17T20:08:29.923</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-26T22:54:43.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\SplashScreen.scale-100.png">
       <PackagePath>SplashScreen.scale-100.png</PackagePath>
@@ -420,7 +435,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\css\spartan.css">
       <PackagePath>css\spartan.css</PackagePath>
-      <Modified>2015-07-02T20:31:07.081</Modified>
+      <Modified>2015-07-09T03:17:31.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\css\default.css">
       <PackagePath>css\default.css</PackagePath>
@@ -432,7 +447,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2015-07-02T20:31:07.089</Modified>
+      <Modified>2015-07-09T03:17:31.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\print.html">
       <PackagePath>print.html</PackagePath>
@@ -440,23 +455,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-07-02T20:31:07.355</Modified>
+      <Modified>2015-07-09T03:17:31.901</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\js\spartan.js">
       <PackagePath>js\spartan.js</PackagePath>
-      <Modified>2015-07-02T20:31:07.367</Modified>
+      <Modified>2015-07-09T17:45:09.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\rsrc\election - Copy.xml">
       <PackagePath>rsrc\election - Copy.xml</PackagePath>
-      <Modified>2015-07-02T20:31:07.383</Modified>
+      <Modified>2015-07-09T03:17:31.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\rsrc\election.xml">
       <PackagePath>rsrc\election.xml</PackagePath>
-      <Modified>2015-07-02T20:31:07.387</Modified>
+      <Modified>2015-07-09T06:34:08.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-02T20:39:38.250</Modified>
+      <Modified>2015-07-09T17:55:56.028</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

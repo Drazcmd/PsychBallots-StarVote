@@ -1,0 +1,6 @@
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\SpartanServer\bin\Debug\StarServer.exe.config
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\SpartanServer\bin\Debug\StarServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\SpartanServer\bin\Debug\StarServer.pdb
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\SpartanServer\obj\Debug\SpartanServer.csprojResolveAssemblyReference.cache
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\SpartanServer\obj\Debug\StarServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\SpartanServer\obj\Debug\StarServer.pdb

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="1.0.2.12" Publisher="CN=t-mattbe" />
+  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="1.0.3.21" Publisher="CN=t-mattbe" />
   <Properties>
-    <DisplayName>SpartanVote</DisplayName>
+    <DisplayName>STAR-Vote</DisplayName>
     <PublisherDisplayName>t-mattbe</PublisherDisplayName>
     <Logo>images\StoreLogo.png</Logo>
   </Properties>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="SpartanVote" Description="A lightweight voting client." ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\app-icon.png" Square30x30Logo="images\app-icon_30.png" ToastCapable="false">
+      <m2:VisualElements DisplayName="STAR-Vote" Description="A lightweight voting client." ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\Square30x30Logo.png" ToastCapable="false">
         <m2:DefaultTile>
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
@@ -33,5 +33,16 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <Capability Name="privateNetworkClientServer" />
+    <Capability Name="enterpriseAuthentication" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="musicLibrary" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="removableStorage" />
+    <Capability Name="sharedUserCertificates" />
+    <Capability Name="videosLibrary" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="proximity" />
+    <DeviceCapability Name="webcam" />
   </Capabilities>
 </Package>

@@ -28,14 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.CastBallotPanel = new System.Windows.Forms.TableLayoutPanel();
             this.CastBallotPanelLabel = new System.Windows.Forms.Label();
+            this.CastBallotList = new System.Windows.Forms.TreeView();
             this.ChallengedBallotPanel = new System.Windows.Forms.TableLayoutPanel();
             this.ChallengedBallotsPanelLabel = new System.Windows.Forms.Label();
+            this.ChallengedBallotList = new System.Windows.Forms.ListView();
+            this.ChallengedBallotView = new System.Windows.Forms.WebBrowser();
             this.ServerInfoPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ElectionInfoLabel = new System.Windows.Forms.Label();
             this.TimeLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.CastBallotPanel.SuspendLayout();
             this.ChallengedBallotPanel.SuspendLayout();
             this.ServerInfoPanel.SuspendLayout();
@@ -47,6 +52,7 @@
             this.CastBallotPanel.ColumnCount = 1;
             this.CastBallotPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.CastBallotPanel.Controls.Add(this.CastBallotPanelLabel, 0, 0);
+            this.CastBallotPanel.Controls.Add(this.CastBallotList, 0, 1);
             this.CastBallotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CastBallotPanel.Location = new System.Drawing.Point(3, 78);
             this.CastBallotPanel.Name = "CastBallotPanel";
@@ -68,12 +74,22 @@
             this.CastBallotPanelLabel.Text = "Cast Ballots";
             this.CastBallotPanelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // CastBallotList
+            // 
+            this.CastBallotList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CastBallotList.Location = new System.Drawing.Point(3, 43);
+            this.CastBallotList.Name = "CastBallotList";
+            this.CastBallotList.Size = new System.Drawing.Size(406, 627);
+            this.CastBallotList.TabIndex = 1;
+            // 
             // ChallengedBallotPanel
             // 
             this.ChallengedBallotPanel.ColumnCount = 2;
             this.ChallengedBallotPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ChallengedBallotPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66667F));
             this.ChallengedBallotPanel.Controls.Add(this.ChallengedBallotsPanelLabel, 0, 0);
+            this.ChallengedBallotPanel.Controls.Add(this.ChallengedBallotList, 0, 1);
+            this.ChallengedBallotPanel.Controls.Add(this.ChallengedBallotView, 1, 1);
             this.ChallengedBallotPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChallengedBallotPanel.Location = new System.Drawing.Point(421, 78);
             this.ChallengedBallotPanel.Name = "ChallengedBallotPanel";
@@ -95,6 +111,24 @@
             this.ChallengedBallotsPanelLabel.TabIndex = 0;
             this.ChallengedBallotsPanelLabel.Text = "Challenged Ballots";
             this.ChallengedBallotsPanelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ChallengedBallotList
+            // 
+            this.ChallengedBallotList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ChallengedBallotList.Location = new System.Drawing.Point(3, 43);
+            this.ChallengedBallotList.Name = "ChallengedBallotList";
+            this.ChallengedBallotList.Size = new System.Drawing.Size(271, 627);
+            this.ChallengedBallotList.TabIndex = 1;
+            this.ChallengedBallotList.UseCompatibleStateImageBehavior = false;
+            // 
+            // ChallengedBallotView
+            // 
+            this.ChallengedBallotView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ChallengedBallotView.Location = new System.Drawing.Point(280, 43);
+            this.ChallengedBallotView.MinimumSize = new System.Drawing.Size(20, 20);
+            this.ChallengedBallotView.Name = "ChallengedBallotView";
+            this.ChallengedBallotView.Size = new System.Drawing.Size(550, 627);
+            this.ChallengedBallotView.TabIndex = 2;
             // 
             // ServerInfoPanel
             // 
@@ -150,6 +184,11 @@
             this.TimeLabel.Size = new System.Drawing.Size(406, 35);
             this.TimeLabel.TabIndex = 1;
             this.TimeLabel.Text = "Current Time:";
+            this.TimeLabel.Click += new System.EventHandler(this.TimeLabel_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // ServerUI
             // 
@@ -180,7 +219,11 @@
         private System.Windows.Forms.Label CastBallotPanelLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label ElectionInfoLabel;
+        private System.Windows.Forms.TreeView CastBallotList;
+        private System.Windows.Forms.ListView ChallengedBallotList;
+        private System.Windows.Forms.WebBrowser ChallengedBallotView;
         private System.Windows.Forms.Label TimeLabel;
+        private System.Windows.Forms.Timer timer1;
 
 
     }

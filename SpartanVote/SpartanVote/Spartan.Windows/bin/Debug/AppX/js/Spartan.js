@@ -1,4 +1,5 @@
 var races = [];
+var races = [];
 var props = [];
 var voteLog = [];
 var subjectID = 0;
@@ -125,7 +126,7 @@ function setUpRaces() {
         thisRace = qxml.getElementsByTagName("race")[j];
         console.log(thisRace.getElementsByTagName("title")[0].textContent);
         races[j].title = thisRace.getElementsByTagName("title")[0].textContent;
-        races[j].text = thisRace.getElementsByTagName("raceText")[0].textContent;
+        races[j].text = (thisRace.getElementsByTagName("raceText")[0] == null) ? "" : thisRace.getElementsByTagName("raceText")[0].textContent;
         races[j].number = thisRace.getElementsByTagName("number")[0].textContent;
 
         console.log("//////////////" + races[j].number);
@@ -139,8 +140,12 @@ function setUpRaces() {
 
             console.log(races[j].candidates[i].name);
 
-            if (races[j].cand[i].hasAttribute("party"))
+            
+            if (races[j].cand[i].getElementsByTagName("party")[0] !== null && races[j].cand[i].getElementsByTagName("party")[0] !== undefined) {
                 races[j].candidates[i].party = races[j].cand[i].getElementsByTagName("party")[0].textContent;
+            } else {
+                races[j].candidates[i].party = "";
+            }
 
             // add the candidate to the document
 
@@ -258,7 +263,6 @@ function start() {
 
             document.getElementById("reviewRight").appendChild(reviewButton);
 
-            
         }
     }
 
@@ -435,7 +439,7 @@ function goToReview() {
             if (races[x].candidates[l].voted === true) {
                 selection = true;
                 document.getElementById("race" + (x)).style.background = "#FFF";
-                document.getElementById("raceTitle" + (x)).innerHTML = races[x].number + ". " + title;
+                document.getElementById("raceTitle" + (x)).innerHTML = (races[x].number) + ". " + title;
                 document.getElementById("race" + (x) + "p").innerHTML = races[x].candidates[l].name;
 
                 if (document.getElementById("race" + (x) + "p").innerHTML.length < 42)
@@ -706,6 +710,7 @@ function nextRace(counter) {
     }
     for (var h = 0; h < races[counter].cand.length; h++) {
         document.getElementById("c" + counter + "" + (h)).innerHTML = races[counter].candidates[h].name;
+        document.getElementById("p" + counter + "" + (h)).innerHTML = races[counter].candidates[h].party;
     }
 
     document.getElementById("titles").style.visibility = "visible";
@@ -836,9 +841,10 @@ function finish() {
     document.getElementById("confHeading").style.visibility = "visible";
     showVoteData();
 
-    trackerNum = generateTrackerNum();
+    window.trackerNum = generateTrackerNum();
+    window.ballotID = generateBallotID();
     print();
-    //sendResults();
+    sendResults();
 
     window.setTimeout(function () {
         hide();
@@ -867,7 +873,9 @@ function finish() {
 function sendResults() {
     var http = new XMLHttpRequest();
     var url = "http://localhost:8080/test";
-    var params = "tNum=" + trackerNum + "&votes=" + document.getElementById("Results").value;
+    var params = "tNum=" + trackerNum + "&ballotID=" + ballotID + "&data=" + generatePrintableHTML();
+
+    console.log(params);
 
 
     http.open("POST", url, true);
@@ -899,7 +907,9 @@ function sendResults() {
 
 function print() {
 
-    var html = generatePrintableHTML();
+    var params = "tNum=" + trackerNum + "&ballotID=" + ballotID + "&data=" + generatePrintableHTML();
+
+    console.log(params);
 
     var http = new XMLHttpRequest();
     var url = "http://localhost:8080/print";
@@ -908,7 +918,7 @@ function print() {
 
     //Send the proper header information along with the request
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    http.setRequestHeader("Content-length", html.length);
+    http.setRequestHeader("Content-length", params.length);
     http.setRequestHeader("Connection", "close");
 
    
@@ -929,7 +939,7 @@ function print() {
     }
 
 
-    http.send(html);
+    http.send(params);
 
     printReceipt();
 }
@@ -942,8 +952,17 @@ function printReceipt() {
 
 function generateTrackerNum() {
     var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    for (var i = 0; i < 128; i++) {
+    var possible = "BCDFGHJKMNPQRTVWXY2346789";
+    for (var i = 0; i < 20; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return text;
+}
+
+function generateBallotID() {
+    var text = "";
+    var possible = "012345679";
+    for (var i = 0; i < 20; i++) {
         text += possible.charAt(Math.floor(Math.random() * possible.length));
     }
     return text;
@@ -1015,94 +1034,114 @@ function onPrintTaskCompleted(printTaskCompletionEvent) {
 function generatePrintableHTML() {
     var output = '';
 
-    //TODO - figure out what this is and why it was here!
-    //console.log(document.getElementById('Results').value);
+    //TODO - what's this line printing?
+    console.log(document.getElementById('Results').value);
 
-    //initial setup of HTML/CSS printout
-    output = output +
-        '<!DOCTYPE html>\n' +
-        '<html>\n' +
-        '<head>\n' +
+    //initial setup
+    //TODO - check the <!DOCTYPE html> thingy is neccessary
+    output += '<!DOCTYPE html>\n'
+    output += '<html>\n';
+    output += '<head>\n';
+    output += '<style>\n';
 
-        //begin CSS part of the HTML printout
-        '<style>\n\n' +
+    //CSS overall font
+    output += 'html * { font-family: "Avenir Next" !important; color: black;}\n';
 
-            //CSS overall font
-            'html * { font-family: "Avenir Next" !important; color: black;}\n\n' +
+    //CSS classes, taken directly (but formatted differently to save space) from the example HTML/CSS printout 6/18/15
 
-            //CSS classes, taken directly (but formatted differently) from the example HTML/CSS printout as of 6/29/15
-            //See ballot printout example files for css style guide. DO NOT MAKE CHANGES HERE WITHOUT CHANGING THE PRINTOUT EXAMPLE FIRST!!!!
+    output += '' +
             'hr.divideRace { /* Formatting for the black horizontal line that divides up the races */' +
             ' display: block; font-size: 13.5pt; margin-top: -1.5pt; margin-left: 0pt; margin-bottom: 10pt;' +
-            ' margin-right: 0pt; font-weight: bolder; }\n\n' +
-
+            ' margin-right: 0pt; font-weight: bolder; width: 192pt; }' +
+            '\n' +
             'h1 { /*Upper left header ("Official Ballot")*/ display: inline; font-size: 13.5pt; margin-top: 0pt;' +
-            ' margin-left: 36pt; margin-bottom: 0pt; margin-right: 0pt; font-weight: bold; } \n\n' +
-
-            'h2 { /*Upper rightt header ("PLACE THIS IN BALLOT BOX")*/ display: inline;' +
-            ' text-align: right; font-size: 17.3pt; margin-top: 0pt; margin-right: 36pt; margin-left: 101.5pt;' +
-            ' margin-bottom: 0pt; font-weight: bold; } \n\n' +
-
-            'divDate { /*Date, just underneath the first (upper left) header*/ display:block; font-size: 10.1pt;' +
-            ' margin-top: -5pt; margin-left: 36pt; margin-bottom: 0pt; margin-right: 36pt; font-weight: normal; } \n\n' +
-
-            ' divLocation { /*Location, just underneath the date*/ display: block; font-size: 10.1pt; margin-top: -2.5pt;' +
-            ' margin-left: 36pt; margin-bottom: 19pt; margin-right: 36pt; font-weight: normal; }  \n\n' +
-
-            'div.electionOrProposition { /*The name of each election */ display:block; font-size: 11pt; margin-top:0pt;' +
-            ' margin-left:0pt; margin-bottom: 1.5pt; margin-right:0pt; font-weight: bold } \n\n' +
-
+            ' margin-left: 36pt; margin-bottom: 0pt; margin-right: 0pt; font-weight: bold; }\n' +
+            '\n' +
+            '' +
+            'h2 { /*Upper right header ("PLACE THIS IN BALLOT BOX")*/ display: inline;' +
+            ' text-align: right; font-size: 17.3pt; margin-top: 0pt; margin-right: 36pt; margin-left: 96pt;' +
+            ' margin-bottom: 0pt; font-weight: bold;' +
+            /* might want to remove this boxing/highlighting later */ 'border:2.75pt solid black; }\n' +
+            '\n' +
+            '' +
+            'divDate { /*Date, just underneath the first (upper left)' +
+            ' header*/ display:block; font-size: 10.1pt; margin-top: 0pt; margin-left: 36pt; margin-bottom: 0pt;' +
+            ' margin-right: 36pt; font-weight: normal; }\n' +
+            ' divLocation { /*Location, just underneath the date*/' +
+            ' display: block; font-size: 10.1pt; margin-top: -2.5pt; margin-left: 36pt; margin-bottom: 19pt;' +
+            ' margin-right: 36pt; font-weight: normal; }\n' +
+            '\n' +
+            '' +
+            'div.electionOrProposition { /*The name of each election */' +
+            ' display:block; font-size: 11pt; margin-top:0pt; margin-left:0pt; margin-bottom: 1.5pt; margin-right:0pt; ' +
+            ' font-weight: bold }\n' +
+            '\n' +
+            '' +
             'div.namePlusAND { /* ONLY used for the first person of two total */ display:block;' +
             ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight:' +
             ' normal; }  div.onlyOrSecondPerson { /* Used for one person total, or the second of two.' +
             ' THIS ONE IS SPECIAL - it relies on using the width field to work with .party!! */ display: inline-block;' +
             ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight:' +
-            ' normal; width: 82%; }\n\n' +
-
-            'div.namePlusAND {/* ONLY used for the first person of two total */ display:block; font-size: 10.5pt; margin-top:0pt;' +
-            ' margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight: normal; } \n\n' +
-
+            ' normal; width: 82%; }\n' +
+            '\n' +
+            '' +
+            'div.namePlusAND {/* ONLY used for the first person of two total */ display:block;' +
+            ' font-size: 10.5pt; margin-top:0pt; margin-left:0pt; margin-bottom: -3pt; margin-right:5pt; font-weight: normal; } \n' +
+            '\n' +
+            '' +
             'div.onlyOrSecondPerson { /* Used for one person total, or the second of two. THIS ONE IS SPECIAL - it relies' +
             ' on using the width field to work with .party!! */ display: inline-block; font-size: 10.5pt; margin-top:0pt;' +
-            ' margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight: normal; width: 82%; }\n\n' +
-
+            ' margin-left:0pt; margin-bottom: 0pt; margin-right:0pt; font-weight: normal; width: 91%; }\n' +
+            '\n' +
+            '' +
             'div.party { /* SPECIAL - only used for sticking party on the same line as the (second, if a team) person being voted for */' +
-            ' display: inline-block; font-size: 10.75pt; text-align: right; font-weight:bold; width: 8%; }\n\n' +
-
-            'div.noSelection_outer { /* SPECIAL - only used for highlighting the special "YOU DID NOT SELECT ANYTHING"' +
-            ' message */ display: block; background-color: #D6D7D8; } \n\n' +
-
+            ' display: inline-block; position: absolute; font-size: 10.75pt; text-align: right; font-weight: bold; font-family: monospace !important;}\n' +
+            '\n' +
+            '' +
+            'div.noSelection_outer { /* SPECIAL - only used for highlighting the special "YOU DID NOT SELECT ANYTHING" message */ display: block;' +
+            ' background-color: #D6D7D8; } \n' +
+            '\n' +
+            '' +
             'div.noSelection_inner {/* SPECIAL - only used for the font and positioning of' +
             ' the special "YOU DID NOT SELECT ANYTHING" message */ font-size: 10.75pt; margin-top:0pt; margin-left:6pt;' +
-            ' margin-bottom: 0pt; margin-right:0pt; font-weight: bold; }\n\n' +
+            ' margin-bottom: 0pt; margin-right:0pt; font-weight: bold; }\n' +
+            '\n' +
+            '' +
+            'divLeftSide {/*SPECIAL - Contains the left side of the' +
+            ' page*/ float: left; width: 190pt; padding-left: 36pt; line-height:15pt; }\n' +
+            '\n' +
+            '' +
+            'divRightSide {/*SPECIAL - Contains the right side of the page*/ float: right; width: 190pt; margin-right: 36pt; line-height:15.5pt; }\n' +
+            '\n' +
+            '' +
+            'divFooter { /*SPECIAL - contains the bar code*/ left: 0; bottom: 0; position: fixed; display: block; } \n' +
+            '\n';
 
-            'divLeftSide {/*SPECIAL - Contains the left side of the page*/ float: left; width: 190pt; padding-left: 36pt; line-height:15pt; }\n\n' +
-
-            'divRightSide {/*SPECIAL - Contains the right side of the page*/ float: right; width: 190pt; margin-right: 36pt; line-height:15.5pt;\n\n }' +
-
-        '</style>\n\n';
-    output += '</head>\n\n';
+    output += '</style>\n';
+    output += '</head>\n';
 
 
-    //The actual document's header (date, instructions for voter, location, etc.)
-    output += '<body>\n\n';
+    //actual data
+    output += '<body>\n';
+
+    //TODO - format this better (leaving as is for now since it doesn't affect output. See exapmle CSS page for details)
     output += '<h1>Official Ballot</h1> <h2>PLACE THIS IN BALLOT BOX</h2>\n';
-    output += '<divDate>November 8, 2016, General Election</divDate> <divLocation>Harris County, Texas Precint 101A</divLocation>\n\n';
+    output += '<divDate>9 July 2015, Faculty Summit Showcase</divDate> <divLocation>Redmond, WA Precinct 101A</divLocation>\n';
 
     //now formatting the races on the left side of the printout page
     output += '<divLeftSide>\n';
 
     //first of the two main for-loop where we auto-generate stuff
     //each "block" is one race or proposition; the LEFT is because these blocks are on the left side of the printout page
+    //TODO - Check this setup is ok
+    //propositions are shorter text so we do one more block on the left side
     for (var blockNumberLEFT = 0; blockNumberLEFT < Math.floor(races.length / 2) ; blockNumberLEFT++) { //TODO - check for rounding errors.
         // Each iteration focueses on one particular race or proposition
         var nextLeftSideBlock = handleOneBlockHTML(blockNumberLEFT);
         output += nextLeftSideBlock;
     }
-    output += '</divLeftSide>\n\n';
 
-
-
+    output += '</divLeftSide>\n';
     //now the same thing for the races on the right side of the printout page
     output += '<divRightSide>\n';
 
@@ -1113,29 +1152,34 @@ function generatePrintableHTML() {
         var nextRightSideBlock = handleOneBlockHTML(blockNumberRIGHT);
         output += nextRightSideBlock;
     }
-    output += '</divRightSide>\n\n';
+    output += '</divRightSide>\n';
 
-    //TODO - make sure this isn't important
-    //console.log(document.getElementById('Results').value);
+    //TODO - what's this line doing?
+    //output += document.getElementById('Results').value;
+    output += '</body>\n\n';
 
-    //Add in the barcode. TODO - make sure that it fits completely, possibly rework how you put in the image.
-    output += '<img src="fakeBarcode.jpg" alt="BARCODE GOES HERE" style="width:350px;height:35px;">\n'
+    //now stick in the barcode
+    output += '<divFooter>\n' +
+              '<img src="barcode.jpg" alt="BARCODE GOES HERE" style="width:275pt;height:25pt;">\n' +
+              '<br>Ballot Tracker Number: ' + trackerNum +'\n' +
+              '</divFooter>\n\n'
 
-    //now just close it up
-    output += '</body>\n';
     output += '</html>\n';
     return output;
 }
 /**
  * The main function that handles each individual "block" of HTML for the printout of hte ballot
- * I am defining one "block" to be either one race or proposition 
+ * I am defining one "block" to be either one race or proposition
  *
  * This function will be called once for each iteration of the for loops in the main HTML generating function
  *
- *  ***TODO - Right now, we rely on hardcoding in selections the helper functions for dealing with multi-person races 
+ *  ***TODO - Right now, we rely on hardcoding in selections the helper functions for dealing with multi-person races
  *            using the number of the race or proposition (what I later call the "block number") since the races
- *            for this research is remaining fixed (for the next few months at least) 
- * 
+ *            for this research is remaining fixed (for the next few months at least)
+ *
+ *            Eventually, we'll need to have a way to determine up here what type of block we're dealing with,
+ *            and call one of the helper functions based on this intelligent selection, *            all blocks the same way.
+ *
  */
 function handleOneBlockHTML(blockNumber) {
     var chosenTicket;
@@ -1149,12 +1193,11 @@ function handleOneBlockHTML(blockNumber) {
     if (blockNumber == 0 || nameOfRace == "President and Vice President") {
         //twoPersonSelection = true;
 
-        //ture&&true==true, false&&false==false, and trueXORtrue is an error
-        //unfortunately there is no quick XOR in javascript, so I made the earlier line an OR and then checked if either were false
+        ////ture&&true==true, false&&false==false, and trueXORtrue is an error
+        ////unfortunately there is no quick XOR in javascript, so I made the earlier line an OR and then checked if either were false
         //if (blockNumber != 0 || nameOfRace != "President and Vice President") {
         //    console.log("\nAs of now, only the Presidential election can have two candidates\n");
         //    var errorString = "ERROR IN TWO PERSON SELECTION!!!!!! nameOfRace is " + nameOfRace + "and blockNumber is " + 0 + " ; one of these is wrong!";
-        //    console.log('\n\n\n\n\n' + errorString + '\n\n\n\n\n');
         //    return errorString;
         //}
     }
@@ -1168,7 +1211,7 @@ function handleOneBlockHTML(blockNumber) {
         if (races[blockNumber].candidates[l].voted == true) {
             selection = true;
             chosenTicket = races[blockNumber].candidates[l].name; //NOTE THAT THIS MIGHT BE MORE THAN ONE NAME!
-            chosenTicketParty = races[blockNumber].candidates[l].party === undefined ? "" : races[blockNumber].candidates[l].party;
+            chosenTicketParty = races[blockNumber].candidates[l].party;
         }
     }
 
@@ -1184,12 +1227,12 @@ function handleOneBlockHTML(blockNumber) {
         if (twoPersonSelection == true) {
             if (nameOfRace == "President and Vice President") {
                 var helperArray = chosenTicket.split(" and ", 2);
-                //console.log("\n\n\n\n testing - these should be two names!->   " +  helperArray[0] + helperArray[1] + "from this array ->   " + helperArray);
+                console.log("\n\n\n\n testing - these should be two names!->   " + helperArray[0] + helperArray[1] + "from this array ->   " + helperArray);
                 return generateBlock_Race_TwoPersonSelection(blockNumber, helperArray[0], helperArray[1], chosenTicketParty, nameOfRace);
             }
             else {
-                //As of now, only the Presidential election can have two candidates\n");
-                throw ("ERROR IN TWO PERSON SELECTION! nameOfRace is " + nameOfRace + "instead of President And Vice President");
+                console.log("\nAs of now, only the Presidential election can have two candidates\n");
+                return "ERROR IN TWO PERSON SELECTION!!!!!! nameOfRace is " + nameOfRace + "instead of President And Vice President";
             }
         }
 
@@ -1198,28 +1241,32 @@ function handleOneBlockHTML(blockNumber) {
         }
 
         else {
-            throw ('ERROR - twoPersonSelection is netiher true nor false')
+            console.log("\nThis is not good! Something weird with our HTML. And/or boolean logic\n")
+            //should NEVER execute this block (if here, 'YOU DUN GOOFED')
+            //TODO - figure out what to do in bizarre screwup bug situations. Throw an execption?
+
         }
     }
 
     else {
-        throw ('ERROR - selection is neither true nor false');
+        console.log("\nThis is not good! Something weird with our HTML; that or we broke logic\n")
+        //TODO - figure out what to do in bizarre screwup bug situations. Throw an execption?
     }
 
 }
 
 /*************************************
- *** BEGIN BLOCK GENERATION FUNCTIONS 
+ *** BEGIN BLOCK GENERATION FUNCTIONS
  *
  * These are the various functions that generate the actual text of each of the blocks
  *
  * Name style:
  *      generateBlock_<either 'Race' or Proposition>_<additional specifications>
- *  
+ *
  * inputs: blockNumber, chosenCandidate, chosenCandidateParty
- * 
+ *
  * Each should follow the same general format (excepting the NOSELECTION function), and will return the text as a string
- * 
+ *
  * TODO - propositions
  */
 
@@ -1233,11 +1280,10 @@ function generateBlock_Race_OnePersonSelection(blockNumber, chosenCandidate, cho
 
     //TODO - assuming the syntax used in the twopersonselection works, condense this similarly
     var constructingBlock = '';
-    /*
-        console.log("\n");
-        console.log("The things we have are blockNumber, chosenCandidate, chosenCandidateParty, and nameOfRace ->    " + blockNumber + chosenCandidate + chosenCandidateParty + nameOfRace);
-        console.log("\n");
-    */
+    console.log("\n");
+    console.log("The things we have are blockNumber, chosenCandidate, chosenCandidateParty, and nameOfRace ->    " + blockNumber + chosenCandidate + chosenCandidateParty + nameOfRace);
+    console.log("\n");
+
     //stick in the name of the election
     constructingBlock += '<div class="electionOrProposition">' + nameOfRace + '</div> ';
 
@@ -1260,9 +1306,8 @@ function generateBlock_Race_OnePersonSelection(blockNumber, chosenCandidate, cho
  * Standard sort of election race, but with TWO people running together on each ticket
  *
  * For the demo, this is only for the presidential election'
- * 
+ *
  * TODO - eventually this will need to handle more than just the presidential election
- 
  * TODO - don't use block number to determine the race like this - change it to take in an inputted
  * string like with the candidate and part
  */
@@ -1278,16 +1323,16 @@ function generateBlock_Race_TwoPersonSelection(blockNumber, chosenCandidate0, ch
         //TODO - change the string above to the correct one
         console.log("Uh oh! Something other than the presidential election in the two person selection! Current nameOfRace is: " + nameOfRace);
     }
-    /*
+
     console.log("\n");
     console.log("The things we have are blockNumber, chosenCandidate0, chosenCandidate1, chosenCandidateParty, and nameOfRace ->    " + blockNumber + chosenCandidate0 + chosenCandidate1 + chosenCandidateParty + nameOfRace);
     console.log("\n");
-    */
+
     //stick in the name of the election
     constructingBlock += '<div class="electionOrProposition">' + nameOfRace + '</div>';
 
     // stick in the first person's name, as well as the "And"
-    constructingBlock += '<div class="namePlusAND"> ' + chosenCandidate0 + 'and </div>';
+    constructingBlock += '<div class="namePlusAND"> ' + chosenCandidate0 + ' and </div>';
 
     //stick in the second person's name/
     constructingBlock += '<div class="onlyOrSecondPerson">' + chosenCandidate1 + '</div>';
@@ -1320,6 +1365,6 @@ function generateBlock_proposition(blockNumber, answerSelection) {
 
 }
 /*** END BLOCK GENERATION FUNCTIONS
- *****************************************/
+ ***********************************/
 
 // JavaScript Document

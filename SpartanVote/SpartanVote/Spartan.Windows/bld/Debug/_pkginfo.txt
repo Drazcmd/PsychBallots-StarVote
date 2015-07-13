@@ -1,1 +1,1 @@
-C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\AppPackages\Spartan.Windows_2.0.0.2_Debug_Test\Spartan.Windows_2.0.0.2_AnyCPU_Debug.appxbundle
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\AppPackages\STAR-Vote.Windows_1.0.3.21_Debug_Test\STAR-Vote.Windows_1.0.3.21_AnyCPU_Debug.appxbundle

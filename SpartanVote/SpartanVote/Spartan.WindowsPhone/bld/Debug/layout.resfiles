@@ -53,6 +53,7 @@ js\default.js
 js\spartan.js
 rsrc\election - Copy.xml
 rsrc\election.xml
+rsrc\params.xml
 css\default.css
 css\ui-themed.css
 css\ui-themed.theme-dark.css

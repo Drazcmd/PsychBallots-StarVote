@@ -1,0 +1,16 @@
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\STARAuditServer.exe.config
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\STARAuditServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\STARAuditServer.pdb
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\obj\Debug\STARAuditServer.csproj.ResolveComReference.cache
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\obj\Debug\STARAuditServer.Properties.Resources.resources
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\obj\Debug\STARAuditServer.ServerUI.resources
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\obj\Debug\STARAuditServer.csproj.GenerateResource.Cache
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\obj\Debug\STARAuditServer.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\obj\Debug\STARAuditServer.pdb
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\obj\Debug\STARAuditServer.csprojResolveAssemblyReference.cache
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\PdfSharp-WPF.dll
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\de\PdfSharp-WPF.resources.dll
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\BarcodeLib.dll
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\zxing.portable.dll
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\zxing.portable.pdb
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\STARAuditServer\bin\Debug\zxing.portable.xml

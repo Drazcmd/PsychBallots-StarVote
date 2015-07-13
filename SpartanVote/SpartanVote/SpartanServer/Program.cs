@@ -7,6 +7,7 @@ using System.Threading;
 using System.Linq;
 using System.Text;
 using System.Web;
+using StarServer;
 
 namespace SpartanServer
 {
@@ -15,9 +16,12 @@ namespace SpartanServer
     {
 
         private static Dictionary<string, Dictionary<string, int>> _results;
+        static ServerUI view = new ServerUI();
  
         private static void Main(string[] args)
         {
+            
+            view.Show();
             // TODO init the dictionary with a dictionary for every race
             _results = new Dictionary<string, Dictionary<string, int>>();
             WebServer ws = new WebServer(SendResponse, "http://localhost:8080/test/");

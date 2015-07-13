@@ -1,0 +1,8 @@
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\bin\Debug\PdfSharp-WPF.dll
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\bin\Debug\de\PdfSharp-WPF.resources.dll
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache

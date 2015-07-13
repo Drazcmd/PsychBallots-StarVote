@@ -36,5 +36,17 @@ namespace StarServer
         {
 
         }
+
+        private void TimeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeLabel.Text = "Current Time: " + DateTime.Now.ToLongTimeString() + DateTime.Now.ToLongDateString();
+        }
+
+        
     }
 }

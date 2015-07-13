@@ -75,7 +75,7 @@ fonts\UniversLTStd-Black.ttf
 fonts\UniversLTStd-Bold.eot
 fonts\UniversLTStd-Bold.svg
 fonts\UniversLTStd-Bold.ttf
-images\app-icon_100.png
+images\app-icon_100.scale-100.png
 images\app-icon_60.png
 images\check_notSelected.png
 images\check_selected copy.ai
@@ -95,9 +95,12 @@ images\SplashScreen_620.scale-180.png
 images\sprite-button.png
 images\sprite-pad.png
 images\sprite-voting.png
+images\Square150x150Logo.scale-100.png
+images\Square30x30Logo.scale-100.png
 images\static-check.png
 images\static-info.png
 images\static-instructions.png
+images\StoreLogo.scale-100.png
 js\default.js
 js\spartan.js
 print.html

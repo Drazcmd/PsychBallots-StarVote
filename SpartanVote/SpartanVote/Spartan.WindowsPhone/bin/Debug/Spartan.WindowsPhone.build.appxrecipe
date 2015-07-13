@@ -221,6 +221,9 @@
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\rsrc\election.xml">
       <PackagePath>rsrc\election.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Shared\rsrc\params.xml">
+      <PackagePath>rsrc\params.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.WindowsPhone\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>

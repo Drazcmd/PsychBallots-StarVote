@@ -5,19 +5,6 @@
     <title>STAR-Vote Ballot</title>
     <link href="/css/spartan.css" rel="stylesheet" type="text/css">
     <script src="/js/spartan.js"></script>
-    <script language="VBScript">
-        sub Print()
-        OLECMDID_PRINT = 6
-        OLECMDEXECOPT_DONTPROMPTUSER = 2
-        OLECMDEXECOPT_PROMPTUSER = 1
-        call WB.ExecWB(OLECMDID_PRINT, OLECMDEXECOPT_DONTPROMPTUSER,1)
-        End Sub
-        document.write "<object id='WB' width='0' height='0' classid='CLSID:8856F961-340A-11D0-A96B-00C04FD705A2'></object>"
-    </script>
-
-
-
-
 </head>
 
 <body onload="connect()">
@@ -34,7 +21,7 @@
                 <p>Microsoft Research</p>
                 <strong>Faculty Summit 2015</strong>
             </h1>
-            <p> Research Showcase Questionnaire</p>
+            <p> STAR-Vote Research Showcase Demo Election</p>
             <p>July 9, 2015</p>
             <br>
             <button id="button_begin" type="button" onclick="gotoFirstInstructions()">
@@ -47,7 +34,7 @@
                 <strong>How to vote</strong>
             </h1>
             <p>
-                <strong>To vote for your favorite areas and demos,</strong>
+                <strong>To vote for your candidate or proposition,</strong>
                 touch the name of the area or demo. The box will turn blue.
             </p>
         </div><!--first_instructions-->
@@ -74,7 +61,7 @@
                 <p id="reviewHeader">
                     <strong>Review what you're voting for</strong>
                 </p>
-                <p id="reviewInstructions"> <strong>This screen shows everything you voted for.</strong> Review it carefully. If you are ready to cast your ballot, touch <strong>Cast your ballot.</strong>
+                <p id="reviewInstructions"> <strong>This screen shows everything you voted for.</strong> Review it carefully. If you are ready to print your ballot, touch <strong>Print your ballot.</strong>
                 </p>
             </div> <!--reviewTop-->
 
@@ -86,17 +73,17 @@
             </p>
             <p id="submitText">
                 If you want to make changes, touch the <strong>Return to ballot</strong> button.<br><br>
-                If you are ready to cast your ballot, touch the <strong>Cast</strong> button.
+                If you are ready to print your ballot, touch the <strong>Print</strong> button.
             </p>
             <div id="submitScreenBtns">
                 <button id="returnToBallot" type="button" onclick="recordEvent(review); goToReview();"> Return to ballot </button>
-                <button id="endVoting" type="button" onclick="recordEvent(endoftask); finish();">Cast your ballot</button>
+                <button id="endVoting" type="button" onclick="recordEvent(endoftask); finish();">Print your ballot</button>
             </div><!--submitScreenBtns-->
         </div><!--submitScreen-->
         <!--Confirmation Screen-->
         <div id="confirmation" style="visibility: hidden">
             <p id="confHeading">
-                <strong> Thank you for completing this questionnare!</strong>
+                <strong> Thank you for completing your ballot!</strong>
             </p>
         </div>
 
@@ -130,14 +117,14 @@
             <button id="Review" type="button" onclick="recordEvent(review);recordReviewChange(rIndex);" style="visibility: hidden">
                 Return to Review<br>
             </button>
-            <button id="confirm" type="button" onclick="recordEvent(movingtoprint); confirm();" style="visibility: hidden">Cast your ballot</button>
+            <button id="confirm" type="button" onclick="recordEvent(movingtoprint); confirm();" style="visibility: hidden">Print your ballot</button>
             
 
         </div> <!-- Bottom -->
     </div><!-- Footer -->
     <!--Form for collecting data/emailing it to me-->
     <form id="f1" method="POST" action="http://localhost:8080/test">
-        <input id="submit" type="submit" value="Cast ballot"
+        <input id="submit" type="submit" value="Print ballot"
                onclick="recordEvent(submitBallot);f1.submit();" style="visibility: hidden">
 
         <textarea id="voteLog" style="visibility: hidden" name="voteData"></textarea>

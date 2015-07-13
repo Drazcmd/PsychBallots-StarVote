@@ -1,2 +1,2 @@
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\PrinterComponent\PrinterComponent.csproj;neutral
-C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\Spartan.Windows.jsproj;neutral
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\STAR-Vote.Windows.jsproj;neutral

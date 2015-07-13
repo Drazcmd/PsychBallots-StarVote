@@ -17,7 +17,6 @@ C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\qualifiers.
 C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\qualifiers.txt.intermediate
 C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\t-mattbe\Source\Repos\Star\Star\Star\Star.Windows\bld\Debug\ProjectArchitectures.txt
-C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\ReverseMap\resources.pri
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\AppxManifest.xml
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\Spartan.Windows.build.appxrecipe
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\PrinterComponent.winmd
@@ -36,3 +35,4 @@ C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\ProjectArchitectures.txt
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\Spartan.Windows.jsprojResolveAssemblyReference.cache
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\resources.pri

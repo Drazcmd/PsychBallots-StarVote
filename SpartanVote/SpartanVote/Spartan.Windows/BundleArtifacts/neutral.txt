@@ -1,3 +1,3 @@
-MainPackage=C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\Spartan.Windows_2.0.0.2_Bundle\Spartan.Windows_2.0.0.2_AnyCPU_Debug.appx
-SymbolPackage=C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\AppPackages\Spartan.Windows_2.0.0.2_Debug_Test\Spartan.Windows_2.0.0.2_AnyCPU_Debug.appxsym
-ResourcePack=C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\Spartan.Windows_2.0.0.2_Bundle\Spartan.Windows_2.0.0.2_scale-180.appx
+MainPackage=C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\STAR-Vote.Windows_1.0.3.21_Bundle\STAR-Vote.Windows_1.0.3.21_AnyCPU_Debug.appx
+SymbolPackage=C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\AppPackages\STAR-Vote.Windows_1.0.3.21_Debug_Test\STAR-Vote.Windows_1.0.3.21_AnyCPU_Debug.appxsym
+ResourcePack=C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\STAR-Vote.Windows_1.0.3.21_Bundle\STAR-Vote.Windows_1.0.3.21_scale-180.appx

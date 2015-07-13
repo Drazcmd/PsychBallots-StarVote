@@ -7,9 +7,9 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="2.0.0.2" Publisher="CN=t-mattbe" ProcessorArchitecture="neutral" />
+  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="1.0.3.21" Publisher="CN=t-mattbe" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>SpartanVote</DisplayName>
+    <DisplayName>STAR-Vote</DisplayName>
     <PublisherDisplayName>t-mattbe</PublisherDisplayName>
     <Logo>images\StoreLogo.png</Logo>
   </Properties>
@@ -32,7 +32,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="SpartanVote" Description="A lightweight voting client." ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\app-icon.png" Square30x30Logo="images\app-icon_30.png" ToastCapable="false">
+      <m2:VisualElements DisplayName="STAR-Vote" Description="A lightweight voting client." ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Square150x150Logo.png" Square30x30Logo="images\Square30x30Logo.png" ToastCapable="false">
         <m2:DefaultTile>
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
@@ -50,6 +50,17 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <Capability Name="privateNetworkClientServer" />
+    <Capability Name="enterpriseAuthentication" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="musicLibrary" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="removableStorage" />
+    <Capability Name="sharedUserCertificates" />
+    <Capability Name="videosLibrary" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="proximity" />
+    <DeviceCapability Name="webcam" />
   </Capabilities>
   <Dependencies>
     <PackageDependency Name="Microsoft.WinJS.2.0" MinVersion="1.0.9600.17018" />
@@ -63,8 +74,6 @@
     </Extension>
   </Extensions>
   <build:Metadata>
-    <build:Item Name="SharedGUID" Value="cca6a6f3-5bff-4c86-8214-441c2baf4dde" />
-    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2013" />
     <build:Item Name="OperatingSystem" Version="10.0.10074.0 (fbl_impressive.150424-1350)" />
