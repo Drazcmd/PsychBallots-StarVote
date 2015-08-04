@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="1.0.3.21" Publisher="CN=t-mattbe" ProcessorArchitecture="neutral" />
+  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="3.0.3.23" Publisher="CN=t-mattbe" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>STAR-Vote</DisplayName>
     <PublisherDisplayName>t-mattbe</PublisherDisplayName>
@@ -76,7 +76,7 @@
   <build:Metadata>
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2013" />
-    <build:Item Name="OperatingSystem" Version="10.0.10074.0 (fbl_impressive.150424-1350)" />
+    <build:Item Name="OperatingSystem" Version="10.0.10240.16391 (th1.150715-1752)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
     <build:Item Name="ProjectGUID" Value="6b89998d-7b84-4dc1-9958-b13038782ddc" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />

@@ -351,7 +351,7 @@
     <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\rsrc\election.xml">
       <PackagePath>rsrc\election.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\ReverseMap\resources.pri">
+    <AppxPackagedFile Include="C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

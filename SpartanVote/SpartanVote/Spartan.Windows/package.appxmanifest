@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="1.0.3.21" Publisher="CN=t-mattbe" />
+  <Identity Name="6b89998d-7b84-4dc1-9958-b13038782ddc" Version="3.0.3.23" Publisher="CN=t-mattbe" />
   <Properties>
     <DisplayName>STAR-Vote</DisplayName>
     <PublisherDisplayName>t-mattbe</PublisherDisplayName>

@@ -16,4 +16,4 @@ C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\qualifiers.txt.intermediate
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bld\Debug\ProjectArchitectures.txt
-C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\ReverseMap\resources.pri
+C:\Users\t-mattbe\Source\Repos\Star\SpartanVote\SpartanVote\Spartan.Windows\bin\Debug\resources.pri
